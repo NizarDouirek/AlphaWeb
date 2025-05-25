@@ -1,0 +1,10 @@
+body{
+    
+}
+.Ho{
+    background:url('/public/bg.jpg');
+    background-repeat: no-repeat;
+    background-color: #11264f;
+    
+    height: 100vh;
+}
