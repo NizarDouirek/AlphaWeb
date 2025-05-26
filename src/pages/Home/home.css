@@ -1,10 +1,30 @@
 
-.Ho{
-    background:url('/public/bg.jpg');
-    background-repeat: no-repeat;
-    background-color: #11264f;
-    
-    height: 100vh;
+.home {
+background:url('/public/bg.jpg');/* Chemin relatif depuis le fichier CSS */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #11264f;
+  height: 100vh;
+  display: flex;
+  
+  
+}
+
+.welcome {
+  color: white;
+  /* font-size: 2rem; */
+  font-weight: bold;
+  margin-top: 210px;
+  margin-left: 650px;
+}
+.pp{
+    color: white;
+    font-size: 45px;
+}
+.ItS{
+    color: blue;
+    font-size: 60px;
 }
 .main-h1{
     text-align: right;
