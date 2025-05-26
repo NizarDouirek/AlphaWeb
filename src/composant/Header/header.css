@@ -9,8 +9,9 @@
 }
 .nav ul{
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: center;
+    
 
 }
  li{
@@ -18,4 +19,25 @@
     text-decoration: none;
     color: white;
     
+   
+    
 }
+a{
+ text-decoration-line: none;
+ color: white;
+
+}
+a:hover{
+    color: blue;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+}
+.header-content{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
