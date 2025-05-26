@@ -13,6 +13,8 @@ export default function Home() {
           <p className="ItS">IT Solutions.
        </p>
        <p>You can easily change any design to your own. It is also highly customizable SEO friendly template.</p>
+       <h1>jwnojwojeon</h1>
+       <button>Get Started</button>
         </div>
       </div>
     </>
