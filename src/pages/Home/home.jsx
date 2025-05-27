@@ -1,7 +1,7 @@
 import React from "react";
 import './home.css';
 import Header from "../../composant/Header/header";
-
+import {FaTwitter,FaFacebook,FaLinkedin,FaInstagram } from "react-icons/fa" 
 export default function Home() {
   return (
     <>
@@ -9,13 +9,24 @@ export default function Home() {
         <Header />
         <div className="welcome">
             <p className="pp"> Bienvenue dans notre site</p>
-         
           <p className="ItS">IT Solutions.
        </p>
-       <p>You can easily change any design to your own. It is also highly customizable SEO friendly template.</p>
-       <h1>jwnojwojeon</h1>
-       <button>Get Started</button>
+       <p className="main-p">
+        You can easily change any design to your own. It is also highly <br />
+         customizable SEO friendly template.</p>
+
+         <div className="main-social-media">
+            <a href=""><i className='bx bxl-facebook icon3'></i></a>
+            <a href=""><i className='bx bxl-instagram icon3'></i></a>
+            <a href=""><i className='bx bxl-twitter icon3'></i></a>
+            <a href=""><i className='bx bxl-linkedin icon3'></i></a>
+         </div>
+        <div className="btn-main2">
+            <button className="btn-quotes2">Get Quotes</button>
+            <button className="btn-started">Get Started</button>
         </div>
+        </div>
+
       </div>
     </>
   );

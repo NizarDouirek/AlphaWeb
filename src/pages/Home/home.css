@@ -16,7 +16,8 @@ background:url('/public/bg.jpg');/* Chemin relatif depuis le fichier CSS */
   /* font-size: 2rem; */
   font-weight: bold;
   margin-top: 210px;
-  margin-left: 650px;
+  margin-left: 620px;
+  font-family: roboto;
 }
 .pp{
     color: white;
@@ -24,7 +25,7 @@ background:url('/public/bg.jpg');/* Chemin relatif depuis le fichier CSS */
 }
 .ItS{
     color: blue;
-    font-size: 60px;
+    font-size: 40px;
 }
 .main-h1{
     text-align: right;
@@ -32,3 +33,37 @@ background:url('/public/bg.jpg');/* Chemin relatif depuis le fichier CSS */
     color: white;
     
 }
+.btn-quotes2{
+  padding: 17px;
+  width: 120px;
+  font-size: 15px;
+  background-color: #055FDE;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  
+}
+.btn-started{
+  padding: 17px;
+  width: 120px;
+  font-size: 15px;
+  background-color: #055FDE;
+  color: rgb(255, 255, 255);
+  border-radius: 30px;
+  border: none;
+  margin-left: 20px; 
+}
+.btn-main2{
+margin-top: 20px;
+  
+}
+.main-social-media{
+display: flex;
+gap: 2em;
+margin-top: 50px;
+}
+.main-social-media a{
+  color: #055FDE;
+  font-size: 25px;
+}
+
