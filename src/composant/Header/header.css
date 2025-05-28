@@ -1,60 +1,84 @@
 .header {
-  background: transparent;
-  padding: 20px;
   position: fixed;
-  width: 100%;
   top: 0;
-  text-align: center;
+  left: 0;
+  right: 0;
+  padding: 20px 40px;
   display: flex;
-  justify-content: center;
-  z-index: 10;
   align-items: center;
-  margin-top: -10px;
+  justify-content: center;
+  gap: 1rem;
+  z-index: 1000;
+  background: transparent;
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
 }
-.icon1{
-  margin-left: 30px;
+
+/* Appliqué quand on scroll */
+.header.scrolled {
+  background-color: white; /* semi-transparent */
+  backdrop-filter: blur(5px); 
+  color: white;/* effet de flou */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+.logo {
+  width: 190px;
+  height: auto;
+}
+
 .nav ul {
   display: flex;
   gap: 2rem;
-  justify-content: center;
   padding: 0;
-  margin: 20px;
+  margin-left: 120px;
+  list-style: none;
 }
 
-.nav li {
-  list-style: none;
+.nav a {
+  text-decoration: none;
   color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: 0.3s ease;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Change la couleur du texte après scroll */
+.header.scrolled .nav a {
+  color: #1e293b;
 }
 
 .nav a:hover {
-  color: blue;
+  color: #0a84ff;
 }
-a{
-  text-decoration: none;
-  color: white;
-}
-.btn-quotes{
-  padding: 15px;
-  width: 120px;
-  font-size: 15px;
+
+.btn-quotes {
+  padding: 12px 20px;
   background-color: #0866DF;
   color: white;
   border-radius: 30px;
+  margin-left: 70px;
   border: none;
-  margin-left: 40px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
-.mode{
+
+.btn-quotes:hover {
+  background-color: #0f52b0;
+}
+
+.mode {
+  background: white;
+  border: none;
   border-radius: 50%;
   padding: 10px;
-  border: none;
-  margin-left: 60px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.icon{
-  font-size: 15px;
-  
-  border-radius: 50%;
+
+.icon {
+  font-size: 18px;
+  color: #11264f;
 }

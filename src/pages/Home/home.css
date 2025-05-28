@@ -1,69 +1,123 @@
 
 .home {
-background:url('/public/hero.jpg');/* Chemin relatif depuis le fichier CSS */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #11264f;
+  background: url('/public/bg.jpeg') no-repeat center center/cover;
+  /* background-color: #11264f; */
   height: 100vh;
   display: flex;
-  
-  
+  align-items: center;
+  padding: 0 5%;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
 }
 
 .welcome {
   color: white;
-  /* font-size: 2rem; */
-  font-weight: bold;
-  margin-top: 210px;
-  margin-left: 100px;
-  font-family: roboto;
-}
-.pp{
-    color: white;
-    font-size: 45px;
-}
-.ItS{
-    color: blue;
-    font-size: 40px;
-}
-.main-h1{
-    text-align: right;
-    padding: 300px 300px 0 0;
-    color: white;
-    
-}
-.btn-quotes2{
-  padding: 17px;
-  width: 120px;
-  font-size: 15px;
-  background-color: #055FDE;
-  color: white;
-  border-radius: 30px;
-  border: none;
-  
-}
-.btn-started{
-  padding: 17px;
-  width: 120px;
-  font-size: 15px;
-  background-color: #055FDE;
-  color: rgb(255, 255, 255);
-  border-radius: 30px;
-  border: none;
-  margin-left: 20px; 
-}
-.btn-main2{
-margin-top: 20px;
-  
-}
-.main-social-media{
-display: flex;
-gap: 2em;
-margin-top: 50px;
-}
-.main-social-media a{
-  color: #055FDE;
-  font-size: 25px;
+  max-width: 600px;
+  margin-top: 70px;
+  margin-left: 40px;
+   position: relative;
+  z-index: 2;
 }
 
+.pp {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.ItS {
+  font-size: 2.5rem;
+  color: #0a84ff;
+  margin-bottom: 1rem;
+}
+
+.main-p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #ddd;
+}
+
+
+.main-social-media {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-social-media a {
+  color: #0a84ff;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.main-social-media a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+.btn-main2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-quotes2{
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background-color: #0a84ff;
+  color: white;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn-started {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background-color: transparent;
+  color: white;
+  border-radius: 25px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-quotes2:hover,
+.btn-started:hover {
+  background-color: #0558a2;
+  transform: translateY(-2px);
+  border: none;
+}
+
+
+@media (max-width: 768px) {
+  .home {
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .welcome {
+    margin: 0;
+  }
+
+  .btn-main2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-quotes2,
+  .btn-started {
+    width: 80%;
+  }
+}
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}

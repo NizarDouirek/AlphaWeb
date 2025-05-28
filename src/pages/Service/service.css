@@ -1,0 +1,90 @@
+/* General styles */
+.services-page {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #f9f9f9, #eef3f8);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.services-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.services-hero h1 {
+  font-size: 2.5rem;
+  color: #080552;
+  margin-bottom: 0.5rem;
+}
+
+.services-hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Grid layout */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Service card style */
+.service-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(135deg, #4fc3f7, #1976d2);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.service-card:hover::before {
+  opacity: 0.1;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 50px;
+  color: #1976d2;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.2) rotate(5deg);
+  color: #0866DF;
+}
+
+.service-card h3 {
+  margin-bottom: 0.5rem;
+  color: #0a084b;
+  z-index: 1;
+  position: relative;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 0.95rem;
+  z-index: 1;
+  position: relative;
+}

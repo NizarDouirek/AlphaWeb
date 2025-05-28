@@ -1,11 +1,14 @@
 import React from "react";
 import './home.css';
 import Header from "../../composant/Header/header";
-
+// import Particles from "react-tsparticles";
+import ParticlesBackground from "../../composant/ParticlesBackground/ParticlesBackground";
+import Services from "../Service/service";
 export default function Home() {
   return (
     <>
       <div className="home">
+      <ParticlesBackground/>
         <Header />
         <div className="welcome">
             <p className="pp"> Bienvenue dans notre site</p>
@@ -26,8 +29,9 @@ export default function Home() {
             <button className="btn-started">Get Started</button>
         </div>
         </div>
-
+ 
       </div>
+     <Services/>
     </>
   );
 }
