@@ -1,7 +1,7 @@
 import React from "react";
 import './home.css';
 import Header from "../../composant/Header/header";
-import {FaTwitter,FaFacebook,FaLinkedin,FaInstagram } from "react-icons/fa" 
+
 export default function Home() {
   return (
     <>

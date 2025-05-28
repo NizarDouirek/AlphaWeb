@@ -1,6 +1,6 @@
 
 .home {
-background:url('/public/bg.jpg');/* Chemin relatif depuis le fichier CSS */
+background:url('/public/hero.jpg');/* Chemin relatif depuis le fichier CSS */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,7 +16,7 @@ background:url('/public/bg.jpg');/* Chemin relatif depuis le fichier CSS */
   /* font-size: 2rem; */
   font-weight: bold;
   margin-top: 210px;
-  margin-left: 620px;
+  margin-left: 100px;
   font-family: roboto;
 }
 .pp{
