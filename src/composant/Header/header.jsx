@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import React from "react";
 import './header.css';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
    const [isScrolled, setIsScrolled] = useState(false);
@@ -19,14 +20,15 @@ export default function Header() {
 
       <div className="nav">
         <ul>
-          <li><a href="">Home</a></li> 
+          <li className="logo-img" ></li>
+          <li><Link to="/Home">Home</Link></li> 
           {/* <li><a href="">About</a></li> */}
           <li><a href="">Services</a></li>
           {/* <li><a href="">Portfolio</a></li> */}
           <li><a href="">Testimonials</a></li>
           <li><a href="">Team</a></li>
           <li><a href="">Menu</a></li>
-          <li><a href="">News</a></li>
+          <li><Link to="/Contact">Contact Us</Link></li>
         </ul>
       </div>
 
