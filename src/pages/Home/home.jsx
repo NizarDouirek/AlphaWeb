@@ -34,139 +34,28 @@ export default function Home() {
  
       </div>
      <Services/>
-
-     <div className="home-process-container">
-          <Title text="Notre Processus de Création de Site Web" />
-          <div className="home-process">
-            <div className="home-process-card"><i className='bx bx-bulb' ></i><p className="home-process-p">cahier de charge</p><hr className="hr" ></hr></div>
-            <div className="home-process-card"><i className='bx bx-hourglass' ></i><p className="home-process-p">planification</p><hr className="hr" ></hr></div>
-            <div className="home-process-card"><i className='bx bx-paint' ></i><p className="home-process-p">Design</p><hr className="hr" ></hr></div>
-            <div className="home-process-card"><i className='bx bx-code-alt' ></i><p className="home-process-p">developpement</p><hr className="hr" ></hr></div>
-            <div className="home-process-card"><i className='bx bx-calendar-check' ></i><p className="home-process-p">test et validation</p><hr className="hr" ></hr></div>
-            <div className="home-process-card"><i className='bx bx-wrench' ></i><p className="home-process-p">Maintenance</p><hr className="hr" ></hr></div>
-          </div>
-      </div>
-
-      <div className="home-pack-container" >
-        <h1 className="home-pack-h1">Pack Creation de Site Web</h1>
-        <div className="home-pack">
-          <div className="home-pack-card"style={{background: "linear-gradient(135deg, #bdc3c7,rgb(158, 157, 197))"}}>
-            <h2 className="home-pack-h2">Site vitrine</h2>
-            <hr className="hr-pack" ></hr>
-             <p className="home-pack-card-h2">3999 DH</p>
-              <p className="home-pack-card-p">au lieu</p>
-               <p className="home-pack-card-h3">5999 DH</p>
-                <p className="home-pack-card-p">Un site vitrine sert à vous présenter en<br/> indiquant précisément qui vous êtes, ce que <br/> vous faites et où vous vous situez...</p>
-                  <hr className="hr-pack" ></hr>
-                   <p className="home-pack-card-p2">Le site web Vitrine comprend les fonctionnalités suivantes:</p>
-                
-                  <div className="home-pack-div" >
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Conception graphique personnalisée</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Nom de domaine + Hébergement Offert*</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Adresses e-mail en illimité*</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Sauvegarde automatique*</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Sécurisation du site </p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Maintenance serveur</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Nombre de pages illimité</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Interface d'administration</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Design Responsive</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Galerie photo/vidéo</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Partenaires et références</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Formulaire de contact Anti Spam</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Plan d'accès Google Maps</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Réseaux sociaux</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Optimisation pour le référencement</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Outil d'analyse de trafic</p></div>
-                                  <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Formation</p></div>
-                  </div>
-
-                  <div className="home-pack-button">
-                    <div className="home-pack-card-tarif"><p>0% à la commande 100% à la livraison</p></div>
-                    <button className="home-pack-card-button">Commander</button>
-                  </div>
-                              
-             
-            </div>
-
-            <div className="home-pack-card" style={{background: "linear-gradient(135deg, #f6d365, #fda085)"}}>
-            <h2 className="home-pack-h2">Site E-Commerce</h2>
-            <hr className="hr-pack" ></hr>
-             <p className="home-pack-card-h2">5900 DH</p>
-              <p className="home-pack-card-p">au lieu</p>
-               <p className="home-pack-card-h3">9990 DH</p>
-                <p className="home-pack-card-p">Une boutique en ligne est principalement destinée à vendre des produits sur internet, mais on peut également y trouver des informations concernant l’entreprise comme sur un site vitrine</p>
-                  <hr className="hr-pack" ></hr>
-                   <p className="home-pack-card-p2">site web E-Commerce comprend les mêmes fonctionnalités d’un site vitrine et catalogue avec en plus les points suivants:</p>
-                
-                  <div className="home-pack-div" >  
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Paiement en ligne</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>PayPal</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Compte client</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Gestion de profil</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Gestion des commandes</p></div>
-                       
-                    <div className="home-pack-div2"> <p>En option :</p></div>
-
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Gestion des deals</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Gestion des promotions</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Gestion de stock</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Gestion des factures</p></div>
-                  </div>
-
-                  <div className="home-pack-button">
-                    <div className="home-pack-card-tarif"><p>40% à la commande 60% à la livraison</p></div>
-                    <button className="home-pack-card-button">Commander</button>
-                  </div>
-             
-            </div>
-            <div className="home-pack-card"style={{background: "linear-gradient(135deg,rgb(34, 211, 255), #a3a3a3)"}}>
-            <h2 className="home-pack-h2">Site Catalogue</h2>
-            <hr className="hr-pack" ></hr>
-             <p className="home-pack-card-h2">4990 DH</p>
-              <p className="home-pack-card-p">au lieu</p>
-               <p className="home-pack-card-h3">7990 DH</p>
-                <p className="home-pack-card-p">Un site catalogue est à mi-chemin entre le site vitrine et le site e-commerce. Il permet de présenter aux internautes une partie ou l’ensemble de son catalogue de produits ou de services, sans qu’il n’y ait la possibilité d’effectuer des achats en ligne</p>
-                  <hr className="hr-pack" ></hr>
-                   <p className="home-pack-card-p2">site web Catalogue comprend les mêmes fonctionnalités d’un site vitrine avec en plus les points suivants:</p>
-                
-                  <div className="home-pack-div">
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p> Moteur de recherche</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Structuration rubriques</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Structuration sous-rubriques</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Nombre de produits illimité</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Produits coup de cœur</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Produits recommandés</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Gestion des demandes</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Système de trie et de filtre</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Fiche technique de produits (PDF, DOC,…)</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p>Avis sur les produits</p></div>
-                    <div className="home-pack-div2"><i className='bx bx-check' ></i><p> Actualités/Blog</p></div>
-                  </div>
-
-                  <div className="home-pack-button">
-                    <div className="home-pack-card-tarif"><p>30% à la commande 70% à la livraison</p></div>
-                    <button className="home-pack-card-button">Commander</button>
-                  </div>
-             
-            </div>
-        </div>
-        
-      </div>
-
-      <div className="home-technologies-container">
-        <div className="home-technologies">
-          <h1 className="home-pack-h1">Nos Technologies</h1>
-          <div className="home-technologies-imgcontainer">
-          <div className="home-technologies-img"><img src="./mysql.png" alt="" /></div>
-          <div className="home-technologies-img"><img src="./js.png" alt="" /></div>
-          <div className="home-technologies-img"><img src="./wordpress-logo.png" alt="" /></div>
-          <div className="home-technologies-img"><img src="./js.png" alt="" /></div>
-          <div className="home-technologies-img"><img src="./react-logo.png" alt="" /></div>
-          <div className="home-technologies-img"><img src="./pngwing.com.png" alt="" /></div>
-          </div>
-
+      
+   <section className="ContactHomme">
+    <div>
+      <div className="contentCH">
+        <p className="p1CH">We Carry More Than Just Good Coding Skills</p>
+        <p className="p2CH">Let's Discuss your Projects</p>
+        <p className="p3CH">We pride ourselves with our ability to perform and deliver results. Use the form below to discuss your project needs with our team, we will get back asap.</p>
+        <div className="btn-tel">
+         <button className="btn-quotes3">Get Quotes</button><p>(+44) 152-567-987</p>
         </div>
       </div>
+    </div>
+   </section>
+   <div className="marquee-container2">
+   <div className="marquee-content2">
+           <p>App Development - Web Development - Web Hosting - Design UI/UX
+            - App Development - Web Development - Web Hosting - Design UI/UX
+            - App Development - Web Development - Web Hosting - Design UI/UX
+            - App Development - Web Development - Web Hosting - Design UI/UX
+            </p> 
+           </div>
+   </div>
     </>
   );
 }
