@@ -1,0 +1,13 @@
+.title {
+    color: #080552; 
+    font-size: 2.5rem;
+     font-family: 'Segoe UI', sans-serif;
+    
+    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+     
+    
+    animation: glow 1.8s infinite alternate;
+}

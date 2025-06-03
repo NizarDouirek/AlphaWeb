@@ -3,7 +3,7 @@ import './home.css';
 import Header from "../../composant/Header/header";
 // import Particles from "react-tsparticles";
 import ParticlesBackground from "../../composant/ParticlesBackground/ParticlesBackground";
-
+import Title from "../../composant/Title/title";
 import Services from "../Service/service";
 export default function Home() {
   return (
@@ -36,7 +36,7 @@ export default function Home() {
      <Services/>
 
      <div className="home-process-container">
-          <h1 className="home-process-h1">Notre Processus</h1>
+          <Title text="Notre Processus de Création de Site Web" />
           <div className="home-process">
             <div className="home-process-card"><i className='bx bx-bulb' ></i><p className="home-process-p">cahier de charge</p><hr className="hr" ></hr></div>
             <div className="home-process-card"><i className='bx bx-hourglass' ></i><p className="home-process-p">planification</p><hr className="hr" ></hr></div>
@@ -162,7 +162,7 @@ export default function Home() {
           <div className="home-technologies-img"><img src="./wordpress-logo.png" alt="" /></div>
           <div className="home-technologies-img"><img src="./js.png" alt="" /></div>
           <div className="home-technologies-img"><img src="./react-logo.png" alt="" /></div>
-          <div className="home-technologies-img"><img src="./js.png" alt="" /></div>
+          <div className="home-technologies-img"><img src="./pngwing.com.png" alt="" /></div>
           </div>
 
         </div>
