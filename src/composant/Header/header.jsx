@@ -1,41 +1,45 @@
-import { useEffect, useState } from 'react';
-import React from "react";
-import './header.css';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import './header.css';
 
 export default function Header() {
-   const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  return (
-    <div className={`header ${isScrolled ? "scrolled" : ""}`}>
-      {/* <img src="RIMBERIO.svg" className="logo" alt="Logo" />. */}
 
-      <div className="nav">
-        <ul>
-          <li className="logo-img" ></li>
-          <li><Link to="/Home">Home</Link></li> 
-          {/* <li><a href="">About</a></li> */}
-          <li><a href="">Services</a></li>
-          {/* <li><a href="">Portfolio</a></li> */}
-          <li><a href="">Testimonials</a></li>
-          <li><a href="">Team</a></li>
-          <li><a href="">Menu</a></li>
-          <li><Link to="/Contact">Contact Us</Link></li>
-        </ul>
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  return (
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="logo">
+        {/* Remplace par ton logo 
+        
+        <img src="/logo-light.png" alt="" />*/}<Link to="/Home">AlphaWeb</Link>
       </div>
 
-      <button className="btn-quotes">Get Quotes</button>
-      <button className="mode">
-        <i className="bx bx-moon icon"></i> {/* bx-moon pour dark mode */}
+      <nav className={`nav ${menuOpen ? 'open' : ''}`}>
+        <ul>
+          <li><Link to="/Home" onClick={() => setMenuOpen(false)}>Home</Link></li>
+          <li><a href="#" onClick={() => setMenuOpen(false)}>Services</a></li>
+          <li><a href="#" onClick={() => setMenuOpen(false)}>Testimonials</a></li>
+          <li><a href="#" onClick={() => setMenuOpen(false)}>Team</a></li>
+          <li><a href="/table" onClick={() => setMenuOpen(false)}>Pack</a></li>
+          <li><Link to="/Contact" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
+        </ul>
+      </nav>
+
+          <button className="btn-quotes">Get Quotes</button>
+    
+      
+
+      <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
+        <div className={`hamburger ${menuOpen ? 'open' : ''}`}></div>
       </button>
-    </div>
+    </header>
   );
 }

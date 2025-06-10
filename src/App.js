@@ -3,7 +3,9 @@ import './App.css';
 import Home from './pages/Home/home';
 import Header from './composant/Header/header';
 import Footer from './composant/Footer/footer';
-import Contact from './pages/Contact/contact'
+import Contact from './pages/Contact/contact';
+import PricingTable from './pages/Tablepricing/table';
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 /**
  * App component serves as the main entry point for the application.
@@ -24,6 +26,7 @@ function App() {
          <Routes>
             <Route path="/Home" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
+         <Route path="/table" element={<PricingTable />} />
          </Routes>
          <Footer />
       </Router>
