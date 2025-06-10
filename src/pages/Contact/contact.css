@@ -1,0 +1,117 @@
+.contact-header{
+    background: url('/public/ContactHero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+     height: 70vh; 
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    
+
+}  
+
+.home-p-contact {
+    text-decoration-line: none;
+    color: #fff;
+
+}
+.home-p-contact:hover{
+    color: #0a84ff;
+   
+}
+.contact-p2{
+    font-size: 20px;
+    font-family:"Barlow", sans-serif;
+
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 7rem;
+    margin-top: 170px;
+    margin-bottom: 100px;
+
+}
+.contact-form {
+   display: flex;
+    flex-direction: column;
+    width: 580px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.267);
+    
+}
+
+.contact-form input,
+.contact-form textarea ,
+.contact-form .btn-send{
+    padding: 15px;
+    width: 500px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+
+.btn-send {
+    
+    padding: 10px 20px;
+    background-color: #0866DF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    
+    margin-top: 20px;
+    
+}
+.btn-send:hover {
+    background-color: #010102;transition: background-color 0.3s ease-in-out;transform: scale(1.03);
+}
+
+.contact-info .contact-p3 {
+margin-top: 50px;
+    font-size: 1.2rem;
+ 
+}
+.contact-h1 h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    top: 70px;
+    position: relative;
+    color: #052857;
+}
+.contact-info i{
+    color: #0866DF;
+    font-size: 1.5rem;
+    padding: 4px;
+}
+.contact-info h2{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0866DF;
+    
+}
+.contact-p3 {
+   display: flex;
+   flex-direction: column;
+}
+.contact-info .label{
+   display: flex;
+}
