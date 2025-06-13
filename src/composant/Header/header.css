@@ -1,86 +1,224 @@
+/* Header de base */
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   padding: 20px 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  z-index: 1000;
+  justify-content: space-between;
   background: transparent;
   transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+  z-index: 1000;
+  color: #ffffff;
 }
 
-/* Appliqué quand on scroll */
 .header.scrolled {
-  background-color: white; /* semi-transparent */
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px); 
-  color: white;/* effet de flou */
+  background-color: white;
+  backdrop-filter: blur(5px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #1e293b;
 }
 
-.logo {
-  width: 190px;
-  height: auto;
+.logo a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: inherit;
 }
 
+/* Nav desktop */
 .nav ul {
   display: flex;
   gap: 2rem;
-  padding: 0;
-  margin-left: 120px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.nav a {
+.nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
-/* Change la couleur du texte après scroll */
-.header.scrolled .nav a {
+.header.scrolled .nav ul li a {
   color: #1e293b;
 }
 
-.nav a:hover {
+.nav ul li a:hover {
   color: #0a84ff;
 }
 
+/* Bouton Get Quotes */
 .btn-quotes {
   padding: 12px 20px;
   background-color: #0866DF;
   color: white;
   border-radius: 30px;
-  margin-left: 70px;
   border: none;
   font-size: 0.95rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  margin-left: 20px;
 }
 
 .btn-quotes:hover {
   background-color: #0f52b0;
 }
 
-.mode {
-  background: white;
+/* Menu toggle - hamburger */
+.menu-toggle {
+  display: none;
+  background: none;
   border: none;
-  border-radius: 50%;
-  padding: 10px;
-  margin-left: 10px;
   cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 25px;
+  height: 3px;
+  background-color: white; /* blanc par défaut */
+  display: block;
+  border-radius: 3px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+/* Quand on scroll, burger devient bleu foncé */
+.header.scrolled .hamburger,
+.header.scrolled .hamburger::before,
+.header.scrolled .hamburger::after {
+  background-color: #11264f; /* couleur bleu foncé */
+}
+
+/* Animation burger ouvert (optionnel) */
+.hamburger.open {
+  background-color: transparent;
+}
+
+.hamburger.open::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger.open::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    background-color: white;
+    width: 200px;
+    height: calc(100% - 70px);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .nav.open {
+    transform: translateX(0);
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 20px;
+  }
+
+  .nav ul li a {
+    color: #1e293b;
+    font-weight: 600;
+  }
+
+  .btn-quotes {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+.logo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.5rem; /* espace entre l'image et le texte */
 }
 
-.icon {
-  font-size: 18px;
-  color: #11264f;
+.logo .imgLogo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
 }
 
+.logo .imgLogo:hover {
+  transform: rotate(10deg) scale(1.05);
+}
+
+.logo a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #007cf0, #00dfd8, #007cf0);
+  background-size: 200%;
+  background-clip: text;
+  margin-top: 10px;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.logo a:hover {
+  transform: scale(1.05);
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+.mode{
+   padding: 10px 15px;
+   width: 50px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+ 
+}
