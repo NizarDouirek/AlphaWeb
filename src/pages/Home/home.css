@@ -64,7 +64,8 @@
 }
 
 .btn-quotes2{
-  padding: 1rem 2rem;
+  padding: 1rem;
+  width: 200px;
   font-size: 1.1rem;
   background-color: #0a84ff;
   color: white;
@@ -75,6 +76,7 @@
 }
 .btn-started {
   padding: 1rem 2rem;
+  width: 200px;
   font-size: 1.1rem;
   background-color: transparent;
   color: white;

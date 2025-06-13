@@ -32,10 +32,13 @@ export default function Header() {
           <li><Link to="/Contact" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
         </ul>
       </nav>
+      <div className='btn-header'>
+        <button className="btn-quotes">Get Quotes</button>
+        <button className="mode">
+          <i className="bx bx-moon icon"></i>
+        </button>
+      </div>
 
-          <button className="btn-quotes">Get Quotes</button>
-    
-      
 
       <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">
         <div className={`hamburger ${menuOpen ? 'open' : ''}`}></div>

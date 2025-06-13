@@ -66,17 +66,17 @@ const PricingTable = () => {
             <tr><td className='title-th'></td></tr>
 
            <tr><th className='border-top-none'>Révisions & Livraison</th></tr>
-          <tr>
-  <td className="title-left">Formulaire de contact intégré</td>
-  <td style={{color:'gray'}}>—</td>
-  <td style={{color:'#8770FF'}}>✔</td>
-  <td style={{color:'#8770FF'}}>✔</td>
+         <tr>
+  <td className="title-left">Révisions</td>
+  <td>1</td>
+  <td>2</td>
+  <td>Illimitées (1 mois)</td>
 </tr>
 <tr>
-  <td className="title-left">Optimisation SEO</td>
-  <td style={{color:'gray'}}>—</td>
-  <td>De base</td>
-  <td>Avancée</td>
+  <td className="title-left">Livraison rapide</td>
+  <td>5 jours</td>
+  <td>—</td>
+  <td>—</td>
 </tr>
 
 

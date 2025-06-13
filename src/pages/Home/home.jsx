@@ -1,7 +1,7 @@
 import React from "react";
 import './home.css';
 import Header from "../../composant/Header/header";
-// import Particles from "react-tsparticles";
+import Particles from "react-tsparticles";
 import ParticlesBackground from "../../composant/ParticlesBackground/ParticlesBackground";
 import Title from "../../composant/Title/title";
 import Plans from "../Pricing/cardstry";
@@ -21,9 +21,9 @@ export default function Home() {
 
   return (
     <>
-    
+      {/**/}
       <div className="home">
-        {/* <ParticlesBackground/>*/}
+        <ParticlesBackground />
         <Header />
         <div className="welcome">
           <p className="pp"> Bienvenue dans notre site</p>

@@ -48,8 +48,12 @@
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 30px rgba(0, 0, 0, 0.267);
-    
+   ;
+font-family: Arial, sans-serif;
+
 }
+    
+
 
 .contact-form input,
 .contact-form textarea ,
@@ -115,3 +119,49 @@ margin-top: 50px;
 .contact-info .label{
    display: flex;
 }
+
+
+.input-wrapper {
+position: relative;
+
+}
+input {
+width: 100%;
+border: 2px solid #e051FF;
+padding: 12px 10px;
+background: #fff;
+outline: none;
+font-size: 16px;
+transition: border-color 0.3s ease;
+}
+input:focus {
+border-color: #0051FF;
+}
+/* Label Base Style */
+label {
+position: absolute;
+left: 10px;
+top: 14px;
+background: #fff;
+padding: 0 5px;
+color: #666;
+font-size: 16px;
+transition: transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+pointer-events: none;
+}
+/* Label moves up when input is focused or not empty */
+input:focus + label,textarea:focus + label,textarea:not(:placeholder-shown) + label,
+input:not(:placeholder-shown) + label {
+transform: translateY(-24px);
+color: #0051FF;
+font-size: 14px;
+}
+/* Remove outline for accessibility states 
+:focus,
+:focus-visible,
+:focus-within,
+:-moz-focusring,
+:-moz-focus-inner,
+:-moz-focus-outer {
+outline: none;
+}*/
