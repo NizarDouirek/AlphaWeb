@@ -9,13 +9,14 @@ import ParticlesBackground from "../../composant/ParticlesBackground/ParticlesBa
 import Title from "../../composant/Title/title";
 import Plans from "../Pricing/cardstry";
 import Services from "../Service/service";
+import Process from "../Process/process";
 
 const logos = [
   "./mysql.png",
   "./js.png",
   "./wordpress-logo.png",
-  "./js.png",
-  "./react-logo.png",
+  "./laravel.png",
+  "./react.png",
   "./js.png",
 ];
 
@@ -141,70 +142,18 @@ export default function Home() {
     </div>
      {/* <div className="home-process-container"> */}
           
-     
-      <div className="contentProcess">
-  <h2 className="process-title">Notre Processus</h2>
-  <div className="process-container">
-    <div className="process-image">
-      <img src="wee.svg" className="imgproc" alt="Process Illustration" />
-    </div>
-    <div className="process-steps">
-      <div className="step">
-        <div className="icon"><i className='bx bx-bulb'></i></div>
-        <div className="text">
-          <h3>Cahier de charge</h3>
-          <p>Définir les besoins et exigences. L'ampoule symbolise l’émergence d’idées et la créativité.</p>
-        </div>
-      </div>
-      <div className="step">
-        <div className="icon"><i className='bx bx-hourglass'></i></div>
-        <div className="text">
-          <h3>Planification</h3>
-          <p>Structurer le projet. Le sablier évoque la gestion du temps et l’organisation efficace.</p>
-        </div>
-      </div>
-      <div className="step">
-        <div className="icon"><i className='bx bx-paint'></i></div>
-        <div className="text">
-          <h3>Design</h3>
-          <p>Travail sur l’interface et l’expérience utilisateur. Le pinceau exprime la créativité.</p>
-        </div>
-      </div>
-      <div className="step">
-        <div className="icon"><i className='bx bx-code-alt'></i></div>
-        <div className="text">
-          <h3>Développement</h3>
-          <p>Implémentation des fonctionnalités. L’icône de code symbolise la technique.</p>
-        </div>
-      </div>
-      <div className="step">
-        <div className="icon"><i className='bx bx-calendar-check'></i></div>
-        <div className="text">
-          <h3>Test et validation</h3>
-          <p>Garantie de la qualité. L’icône de calendrier avec coche indique la vérification.</p>
-        </div>
-      </div>
-      <div className="step">
-        <div className="icon"><i className='bx bx-wrench'></i></div>
-        <div className="text">
-          <h3>Maintenance</h3>
-          <p>Assurer le bon fonctionnement sur le long terme. L’icône de clé représente les ajustements.</p>
-        </div>
-      </div>
-    </div>
+     <Process/>
     
-  </div>
 {/* </div> */}
 
-      </div>
-      <section className="ContactHomme">
+    <section className="ContactHomme">
     <div>
       <div className="contentCH">
         <p className="p1CH">We Carry More Than Just Good Coding Skills</p>
         <p className="p2CH">Let's Discuss your Projects</p>
         <p className="p3CH">We pride ourselves with our ability to perform and deliver results. Use the form below to discuss your project needs with our team, we will get back asap.</p>
         <div className="btn-tel">
-         <Link to="/Contact"><button className="btn-quotes3">Get Quotes</button></Link><p>(+44) 152-567-987</p>
+         <Link to="/Contact"><button className="btn-quotes3">Get Quotes</button></Link><p>(+212) 783692373</p>
         </div>
       </div>
     </div>

@@ -1,0 +1,161 @@
+.contentProcessCircle {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.process-title {
+  font-size: 2.5rem;
+   color: #080552;
+   margin-top: 1.5rem;
+}
+
+.circle-container {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+}
+
+.central-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  /* background-color: #f9f9f9; */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.central-image img {
+  width: 450px;
+  height: auto;
+}
+
+.step-circle {
+  position: absolute;
+  width: 250px;
+  background: #ffffff;
+  padding: 20px 15px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 0;
+  
+    overflow: hidden;
+  
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      /* background: #054044; */
+      background-image: linear-gradient(25deg, #caeff6, #0f4e7f,#065983, #087d8a);
+      height: 52px;
+      width: 60px;
+      border-radius: 32px;
+      transform: scale(1);
+      transform-origin: 50% 50%;
+      transition: transform 0.5s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(21);
+    }
+  
+}
+ .step-circle:hover {
+    .text p{
+      transition: all 0.3s ease-out;
+      color: rgb(233, 228, 228);
+    }
+    .icon{
+      color: #01ffea;
+    }
+    .text h3{
+      transition: all 0.3s ease-out;
+      color: #ffffff;
+    }
+
+  }
+
+.step-circle .icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.step-circle .text h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.step-circle .text p {
+  font-size: 1rem;
+  color: #555;
+  /* line-height: 1.4; */
+  margin: 0;
+}
+
+/* Positionnement circulaire amélioré */
+.top-left {
+  top: 4%;
+  left: -12%;
+}
+.mid-left {
+  top: 42%;
+  left: -20%;
+}
+.bottom-left {
+  bottom: -4%;
+  left: 7%;
+}
+
+.top-right {
+  top: 4%;
+  right: -12%;
+}
+.mid-right {
+  top: 42%;
+  right: -20%;
+}
+.bottom-right {
+  bottom: -4%;
+  right: 7%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .circle-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .step-circle,
+  .central-image {
+    position: static;
+    transform: none;
+  }
+
+  .central-image {
+    margin: 30px 0;
+  }
+
+  .step-circle {
+    width: 90%;
+    padding: 20px;
+  }
+}
