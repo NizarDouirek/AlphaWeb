@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import Tooltip from './icons';
 export default function Footer() {
     return (
         <footer>
@@ -60,10 +61,7 @@ export default function Footer() {
                             <h2>Follow Us</h2>
                             <p>Connect with us on social media.</p>
                             <ul>
-                                <li><i className="bx bxl-facebook"></i></li>
-                                <li ><i className="bx bxl-instagram"></i></li>
-                                <li><i className="bx bxl-twitter"></i></li>
-                                <li><i className="bx bxl-linkedin"></i></li>
+              <Tooltip />
                             </ul>
                         </div>
                     </div>

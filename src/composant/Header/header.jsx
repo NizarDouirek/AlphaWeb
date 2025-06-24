@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-
+import ThemeToggle from '../Toglle/toglle'; // Assurez-vous que le chemin est correct
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,27 +17,28 @@ export default function Header() {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="logo">
-        {/* Remplace par ton logo 
-        
-        <img src="/logo-light.png" alt="" />*/}<Link to="/Home">AlphaWeb</Link>
+        <img className="imgLogo" src="logo.svg" alt="" />
+ <Link to="/Home">AlphaWeb</Link>
       </div>
 
       <nav className={`nav ${menuOpen ? 'open' : ''}`}>
         <ul>
           <li><Link to="/Home" onClick={() => setMenuOpen(false)}>Home</Link></li>
-          <li><a href="#" onClick={() => setMenuOpen(false)}>Services</a></li>
-          <li><a href="#" onClick={() => setMenuOpen(false)}>Testimonials</a></li>
-          <li><a href="#" onClick={() => setMenuOpen(false)}>Team</a></li>
-          <li><a href="/table" onClick={() => setMenuOpen(false)}>Pack</a></li>
+          <li><Link to="/About"  onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link to="/Services"  onClick={() => setMenuOpen(false)}>Services</Link></li>
+          <li><Link to="/Home"  onClick={() => setMenuOpen(false)}>Team</Link></li>
+          <li><Link to="/table" onClick={() => setMenuOpen(false)}>Pack</Link></li>
           <li><Link to="/Contact" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
         </ul>
       </nav>
       <div className='btn-header'>
-        <button className="btn-quotes">Get Quotes</button>
-        <button className="mode">
-          <i className="bx bx-moon icon"></i>
-        </button>
+         <Link to="/Contact"> <button className="btn-quotes">Get Quotes</button></Link> 
+
+      <ThemeToggle />
       </div>
+
+
+   
 
 
       <button className="menu-toggle" onClick={toggleMenu} aria-label="Toggle menu">

@@ -1,9 +1,16 @@
 import React from "react";
 import './service.css';
+import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
+    <><div className='contact-header'>
+            <h1 className='contact-p'>Services</h1>
+            <p className='contact-p2'><Link to="/Home" className='home-p-contact'>Home</Link> / Services</p>
+        </div>
     <div className="services-page">
+      
+        
       <section className="services-hero">
         <h1>Nos Services</h1>
         <p>
@@ -44,6 +51,6 @@ export default function Services() {
 </div>
 
       </section>
-    </div>
+    </div></>
   );
 }

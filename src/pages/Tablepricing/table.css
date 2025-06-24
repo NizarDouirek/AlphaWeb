@@ -1,102 +1,4 @@
-.pricing-table {
-  padding: 2rem;
-  font-family: sans-serif ;
-}
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: center;
-}
-
-th, td {
-  padding: 1rem;
-  border: 1px solid #eee;
-}
-
-th span {
-  display: block;
-  font-size: 1.2rem;
-  margin: 0.3rem 0;
-  font-weight: normal;
-}
-
-button {
-  margin-top: 0.5rem;
-  padding: 5px;
-  border: 1px solid #ccc;
-  background: white;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 150px;
-}
-
-.btn-primary {
-  background-color: #5c3dff;
-  color: white;
-  border: none;
-  
-}
-button:hover {
-  background-color: #5d3dffb9;
-}
-
-.highlight {
-  background-color: #f8f8ff;
-  border-radius: 12px;
-}
-.title-th{
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
-    text-align: left;
-}
-.border-top-none{
-    border-top: none;
-    border-right: none;
-    text-align: left;
-}
-.border-none{
-    border: none;
-}
-.title-left{
-    text-align: left;
-    
-}
-.pricing-header{
-    display:grid;
-    justify-content: center;
-    
-    align-items: center;
-    text-align: center;
-    margin: 2rem 0;
-}
-.h1-price{
-      font-family: 'Raleway', sans-serif;
-  font-size: 2.5rem;
-  font-weight:lighter;
-  padding-top: 40px ;
-  color: #070552; 
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: center;
-  animation: glow 1.8s infinite alternate;
-}
-.p-div{
-    align-items: center;
-    text-align: center;
-  
-}
-.p-price{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
-    font-weight:bold;
-    padding-top: 20px ;
-    color: #341ea3; 
-   
-   
-    
-}
 .contact-header{
    background: linear-gradient(to bottom left, #0f172a, #1e1a78, #0f172a);
     background-repeat: no-repeat;
@@ -130,3 +32,247 @@ button:hover {
 }
 
 
+.pricing-table {
+  border-collapse: separate;
+  border-spacing: 45px 0px; /* 20px entre colonnes, 0px entre lignes */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 100px;
+  
+}
+
+.pricing-table thead th {
+ color: #fff;
+  
+  width: 200px;
+  border: 1px solid #222222;
+  height: 200px;
+border-radius: 1rem;
+
+}
+.plan-title {
+  padding: 20px 0;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.plan-price {
+ 
+  padding: 25px 0;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+/* Backgrounds pour chaque titre */
+
+.pricing-table tbody td {
+  padding: 10px;
+ border-radius: 1rem;
+}
+ .btn1{
+  margin-top: 20px;
+  width: 200px;
+height:40px;
+ font-size: 1rem;
+  border: none;
+ 
+  color: #fff;
+  font-weight:lighter;
+  cursor: pointer;
+      background: #5967C3;
+  background: -webkit-linear-gradient(left top, #5967C3, #83cedc);
+  background: linear-gradient(to bottom right, #5967C3, #83cedc);
+ }
+  .btn2{
+  margin-top: 20px;
+  width: 200px;
+height:40px;
+ font-size: 1rem;
+  border: none;
+ 
+  color: #fff;
+  font-weight:lighter;
+  cursor: pointer;
+    background: #ffaec2;
+  background: -webkit-linear-gradient(left top, #ffaec2, #7e4aaf);
+  background: linear-gradient(to bottom right, #ffaec2, #7e4aaf);
+ }
+  .btn3{
+
+ }
+/* colonne des fonctionnalités */
+
+
+/* footer buttons */
+
+.circular-text{
+  display: flex;
+  
+  gap: 2rem;
+  justify-content:space-around;
+}
+.circular-text span {
+  display: inline-block;
+margin-right: 200px;
+
+
+}
+.bg1{
+  background-color: rgba(177, 174, 174, 0.514);
+}
+ .bg2{
+  background-color: rgba(230, 228, 228, 0.514);
+}
+
+.th1{
+    background: #5967C3;
+  background: -webkit-linear-gradient(left top, #5967C3, #83cedc);
+  background: linear-gradient(to bottom right, #5967C3, #83cedc);
+  border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.th2{
+  background: #ffaec2;
+  background: -webkit-linear-gradient(left top, #ffaec2, #7e4aaf);
+  background: linear-gradient(to bottom right, #ffaec2, #7e4aaf);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.th3{
+  background: #CA619C;
+  background: -webkit-linear-gradient(left top, #CA619C, #DBC084);
+  background: linear-gradient(to bottom right, #CA619C, #DBC084);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.card_box {
+   
+     background: #CA619C;
+  background: -webkit-linear-gradient(left top, #CA619C, #DBC084);
+  background: linear-gradient(to bottom right, #CA619C, #DBC084);
+    position: relative;
+    height: 200px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  
+  }
+
+
+.td1:hover{
+    transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    background: #5967C3;
+  background: -webkit-linear-gradient(left top, #5967C3, #83cedc);
+  background: linear-gradient(to bottom right, #5967C3, #83cedc);
+  z-index: 1;
+}
+.td2:hover{
+    transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    background: #ffaec2;
+  background: -webkit-linear-gradient(left top, #ffaec2, #7e4aaf);
+  background: linear-gradient(to bottom right, #ffaec2, #7e4aaf);
+  z-index: 1;
+}
+.td3:hover{
+    transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background: #CA619C;
+  background: -webkit-linear-gradient(left top, #CA619C, #DBC084);
+  background: linear-gradient(to bottom right, #CA619C, #DBC084);
+  z-index: 1;
+}
+.td4:hover{
+     transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background: conic-gradient(at top left, #4338ca, #6366f1, #a5b4fc);
+  z-index: 1;
+  color: #ffffff;
+}
+.td4{
+  width: 250px;
+}
+/* From Uiverse.io by Wendell47 */ 
+.btn3 {
+    margin-top: 20px;
+  width: 200px;
+height:40px;
+ font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10rem;
+  transition: all 0.02s;
+  font-weight:bolder;
+  cursor: pointer;
+  color: rgb(43, 42, 42);
+  z-index: 0;
+  box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.btn3:hover {
+  background: #CA619C;
+  background: -webkit-linear-gradient(left top, #CA619C, #DBC084);
+  background: linear-gradient(to bottom right, #CA619C, #DBC084);
+}
+
+.btn3:active {
+  transform: scale(0.97);
+}
+
+.hoverEffect {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.hoverEffect div {
+  background: rgb(222, 0, 75);
+  background: linear-gradient(
+    90deg,
+    rgba(222, 0, 75, 1) 0%,
+    rgba(191, 70, 255, 1) 49%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 40rem;
+  width: 10rem;
+  height: 10rem;
+  transition: 0.4s;
+  filter: blur(20px);
+  animation: effect infinite 3s linear;
+  opacity: 0.5;
+}
+
+.btn3:hover .hoverEffect div {
+  width: 8rem;
+  height: 8rem;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

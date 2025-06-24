@@ -9,6 +9,7 @@ export default function ParticlesBackground() {
   }, []);
 
   return (
+    <div style={{height:'500px'}}>
     <Particles
       id="tsparticles"
       init={particlesInit}
@@ -66,6 +67,6 @@ export default function ParticlesBackground() {
         },
         detectRetina: true,
       }}
-    />
+    /></div>
   );
 }

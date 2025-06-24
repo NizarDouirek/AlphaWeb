@@ -43,5 +43,34 @@
     transform: rotate(360deg);
   }
 }
+.dark,
+.dark body,
+.dark #root {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+}
 
+.dark .services-page,
+.dark .services-hero,
+.dark .services-list {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+}
+/* Mode sombre global */
+.dark,
+.dark body,
+.dark #root {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+}
 
+/* Sections spécifiques */
+.dark .services-page,
+.dark .services-hero,
+.dark .services-list,
+.dark .contentProcess,
+.dark .home-technologies-container,
+.dark .faq-container {
+  background: #181818 !important;
+  color: #f1f1f1 !important;
+}
