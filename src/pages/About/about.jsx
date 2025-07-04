@@ -1,6 +1,7 @@
 import React from "react";
 import './about.css';
 import { Link } from "react-router-dom";
+import { FaGlobeAmericas, FaUserTie, FaCheckCircle, FaSmile } from "react-icons/fa"
 
 
 export default function About() {
@@ -9,15 +10,254 @@ export default function About() {
             <h1 className='contact-p'>About US</h1>
             <p className='contact-p2'><Link to="/Home" className='home-p-contact'>Home</Link> / About US</p>
         </div>
-    <div className="services-page">
-      
-        
-      <section className="services-hero">
-        <h1>About US</h1>
-       
-      </section>
+      <div className="about-page">
+        <section className="about-hero">
+          <h1>Who We Are</h1>
+          <div className="headAbout">
+            <img className="img11bout" src="About.webp" alt="" />
+            <div>
+            <h2>Transform Your Business with Smart IT Solutions
 
-     
-    </div></>
+Empower Your Growth Online</h2>
+            <p>
+
+Competently leverage cutting-edge technologies and scalable infrastructures to drive your business forward.
+Enthusiastically maximize secure, cost-effective solutions tailored to your goals, and transform your digital presence into a revenue-generating machine.</p>
+<div className="btnsectionAbout">
+  <button >Contact us</button>
+  <img className="imgfleche" src="fleche.webp" alt="" />
+</div>
+</div>
+          {/* <p>
+            AlphaWeb is a creative web development agency specialized in building modern, responsive, and high-performance websites and applications. We help businesses establish their online presence with innovative solutions tailored to their needs.
+          </p> */}
+          
+          </div>
+        </section>
+
+
+<section className="why-choose-us">
+  
+  <div>
+  <h2>Why Choose AlphaWeb </h2>
+  <p>
+    AlphaWeb offers the expertise, creativity, and resources needed to design, develop, and maintain powerful digital solutions that help your business thrive. We focus on delivering secure, high-performance platforms so you can focus on growing your brand.
+  </p>
+
+  <ul className="why-list">
+    <li>
+      <span className="icon yellow"></span>
+      <div>
+        <h3>Achieve your goals and exceed expectations.</h3>
+        <p>
+          We build tailored solutions that align with your vision, helping you reach new levels of success.
+        </p>
+      </div>
+    </li>
+    <li>
+      <span className="icon red"></span>
+      <div>
+        <h3>Robust websites, apps, and digital products.</h3>
+        <p>
+          Our team crafts modern, responsive, and scalable platforms that elevate your online presence.
+        </p>
+      </div>
+    </li>
+    <li>
+      <span className="icon green"></span>
+      <div>
+        <h3>User experience at the heart of everything.</h3>
+        <p>
+          We design intuitive interfaces to engage your audience and keep them coming back.
+        </p>
+      </div>
+    </li>
+  </ul>
+  </div>
+  <img className="imgWhy" src="about3.webp" alt="" />
+</section>
+
+<section className="stats-section">
+  <div className="stat-item">
+    <FaGlobeAmericas className="stat-icon" />
+    <h3>120<span>+</span></h3>
+    <p>Clients Worldwide</p>
+  </div>
+  <div className="stat-item">
+    <FaUserTie className="stat-icon" />
+    <h3>60<span>+</span></h3>
+    <p>Experience Engineers</p>
+  </div>
+  <div className="stat-item">
+    <FaCheckCircle className="stat-icon" />
+    <h3>70<span>+</span></h3>
+    <p>Completed Projects</p>
+  </div>
+  <div className="stat-item">
+    <FaSmile className="stat-icon" />
+    <h3>120<span>%</span></h3>
+    <p>Satisfaction Customers</p>
+  </div>
+</section>
+
+
+ <section className="about-mission">
+          <div>
+  <h2>Our Mission</h2>
+  <p>
+    We communicate clearly, because in a world crowded with over-the-top marketing, simple wins.
+  </p>
+  <p>
+    We are not rock stars, ninjas or any other disingenuous buzz term. We are creative professionals.
+  </p>
+  <p>
+    Before you can market a business, you need to know its story.
+  </p>
+  <div className="mission-button">
+    <Link to="/AboutDetails" className="about-btn">Find out more</Link>
+  </div>
+  </div>
+  <img src="about2.webp" alt="" />
+</section>
+
+<section className="section-team">
+          <h1>Our Team Members</h1>
+          <h2 className="p-team">See Our Skilled Expert Team</h2>
+    
+<section className="team">
+    
+  {/* cardTeam 1 */}
+  <div className="cardTeam-wrapper">
+    <div className="cardTeam">
+      <div className="cardTeam-image">
+        <img
+          src="https://image.ibb.co/dUTfmJ/profile_img.jpg"
+          alt="profile one"
+        />
+      </div>
+
+      <ul className="social-icons">
+        <li>
+          <a href="#">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fab fa-dribbble"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div className="details">
+        <h2>
+         Nizar Douirek
+          <br />
+          <span className="job-title">Web Developer</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+
+  {/* cardTeam 2 */}
+  <div className="cardTeam-wrapper">
+    <div className="cardTeam profile-two">
+      <div className="cardTeam-image profile-img--two">
+        <img
+          src="https://image.ibb.co/c9rY6J/profile02.jpg"
+          alt="profile two"
+        />
+      </div>
+
+      <ul className="social-icons">
+        <li>
+          <a href="#">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fab fa-dribbble"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div className="details jane">
+        <h2>
+          Soufiane Chellat
+          <br />
+          <span className="job-title">Frontend Developer</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+   <div className="cardTeam-wrapper">
+    <div className="cardTeam">
+      <div className="cardTeam-image">
+        <img
+          src="https://image.ibb.co/dUTfmJ/profile_img.jpg"
+          alt="profile one"
+        />
+      </div>
+
+      <ul className="social-icons">
+        <li>
+          <a href="#">
+            <i className="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i className="fab fa-dribbble"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div className="details">
+        <h2>
+          John Smith
+          <br />
+          <span className="job-title">UI Developer</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+
+       
+       
+      </div></>
   );
 }

@@ -13,6 +13,7 @@ import Services from "../Service/service";
 import Process from "../Process/process";
 import CircularGallery from "../../composant/Carousel/carousel";
 import Card from "../../composant/Carousel/slide";
+// import ModelViewer from '../../composant/Model/ModelViewer';
 const logos = [
   "./mysql.png",
   "./js.png",
@@ -21,7 +22,7 @@ const logos = [
   "./react.png",
   "./js.png",
 ];
-import ModelViewer from '../../composant/Model/ModelViewer';
+
 
 
 
@@ -98,11 +99,11 @@ export default function Home() {
           Nous fournissons des solutions technologiques de haute qualité pour faire évoluer votre entreprise.
         </p>
       </section>
-<ModelViewer
+{/* <ModelViewer
   url="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/main/2.0/ToyCar/glTF-Binary/ToyCar.glb"
   width={400}
   height={400}
-/>
+/> */}
       <section className="services-list">
         <div className="service-card">
           <i className="bx bx-code-alt service-icon"></i>
