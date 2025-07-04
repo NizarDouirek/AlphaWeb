@@ -6,7 +6,7 @@ import Welcome from "../Welcome/welcome";
 import Header from "../../composant/Header/header";
 // import Particles from "react-tsparticles";
 import { FaLaptopCode, FaMobileAlt, FaServer, FaPaintBrush } from 'react-icons/fa';
-import InfiniteScroll from "../../pages/Technologies/technologies";
+
 import Title from "../../composant/Title/title";
 import Plans from "../Pricing/cardstry";
 import Services from "../Service/service";
@@ -21,7 +21,7 @@ const logos = [
   "./react.png",
   "./js.png",
 ];
-import ModelViewer from '../../composant/Model/ModelViewer';
+//import ModelViewer from '../../composant/Model/ModelViewer';
 
 
 
@@ -98,11 +98,12 @@ export default function Home() {
           Nous fournissons des solutions technologiques de haute qualité pour faire évoluer votre entreprise.
         </p>
       </section>
+      {/* 
 <ModelViewer
   url="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/main/2.0/ToyCar/glTF-Binary/ToyCar.glb"
   width={400}
   height={400}
-/>
+/>*/}
       <section className="services-list">
         <div className="service-card">
           <i className="bx bx-code-alt service-icon"></i>
@@ -168,29 +169,11 @@ export default function Home() {
     </div>
    </section>
    
-<Card/>
+
       <div className="home-technologies-container">
         <div className="home-technologies">
           <h1 className="home-pack-h1">Nos Technologies</h1>
-          {isMobile ? (
-            <div className="carousel-wrapper">
-              <div className="carousel">
-                {logos.map((logo, index) => (
-                  <div className="carousel-item" key={index}>
-                    <img src={logo} alt={`tech-${index}`} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          ) : (
-            <div className="home-technologies-imgcontainer">
-              {logos.map((src, index) => (
-                <div className="home-technologies-img" key={index}>
-                  <img src={src} alt={`logo-${index}`} />
-                </div>
-              ))}
-            </div>
-          )}
+         <Card/>
         </div>
       </div>
       
@@ -219,7 +202,7 @@ export default function Home() {
     ))}
   </div>
 </div>
-<InfiniteScroll />
+
 
 
 <div style={{ height: '600px', position: 'relative' }}>

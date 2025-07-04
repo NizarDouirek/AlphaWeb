@@ -4,7 +4,7 @@ import Header from '../../composant/Header/header';
 import Footer from '../../composant/Footer/footer';
 export default function Contact() {
     return (
-        <> <Header />
+        <> 
             <div className='contact'>
 
                 <div className='contact-header'>
