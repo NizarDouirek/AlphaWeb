@@ -6,13 +6,14 @@ import Welcome from "../Welcome/welcome";
 import Header from "../../composant/Header/header";
 // import Particles from "react-tsparticles";
 import { FaLaptopCode, FaMobileAlt, FaServer, FaPaintBrush } from 'react-icons/fa';
-
+import Carousel from "../../composant/Carousel/carousel";
 import Title from "../../composant/Title/title";
 import Plans from "../Pricing/cardstry";
 import Services from "../Service/service";
 import Process from "../Process/process";
 import CircularGallery from "../../composant/Carousel/carousel";
 import Card from "../../composant/Carousel/slide";
+// import ModelViewer from '../../composant/Model/ModelViewer';
 const logos = [
   "./mysql.png",
   "./js.png",
@@ -21,8 +22,9 @@ const logos = [
   "./react.png",
   "./js.png",
 ];
-//import ModelViewer from '../../composant/Model/ModelViewer';
 
+
+//import ModelViewer from '../../composant/Model/ModelViewer';
 
 
 export default function Home() {
@@ -98,12 +100,11 @@ export default function Home() {
           Nous fournissons des solutions technologiques de haute qualité pour faire évoluer votre entreprise.
         </p>
       </section>
-      {/* 
-<ModelViewer
+{/* <ModelViewer
   url="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/main/2.0/ToyCar/glTF-Binary/ToyCar.glb"
   width={400}
   height={400}
-/>*/}
+/> */}
       <section className="services-list">
         <div className="service-card">
           <i className="bx bx-code-alt service-icon"></i>
@@ -201,14 +202,16 @@ export default function Home() {
       </div>
     ))}
   </div>
-</div>
-
-
-
-<div style={{ height: '600px', position: 'relative' }}>
-  <CircularGallery bend={0} textColor="#ffffff" borderRadius={0.05} />
   
 </div>
+
+<section className="home-carousel-section">
+
+  <h1 className="home-pack-h1">Nos Technologies</h1>
+  <Carousel />
+  
+
+</section>
 </>
   );
 }

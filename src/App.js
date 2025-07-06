@@ -9,6 +9,7 @@ import About from './pages/About/about';
 import Services from './pages/Service/service';
 import PricingTable from './pages/Tablepricing/table';
 import Loader from './composant/Loader/loader';
+import Carousel from './composant/Carousel/carousel';
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 <link
         rel="stylesheet"
