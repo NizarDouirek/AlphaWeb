@@ -1,3 +1,4 @@
+
 .reviews-container {
   overflow: hidden;
   padding: 2rem;
@@ -12,7 +13,7 @@
   -webkit-overflow-scrolling: touch;
   overflow: hidden;
   cursor: grab;
-  height: 600px; /* hauteur fixe pour le scroll */
+  height: 500px; /* hauteur fixe pour le scroll */
 }
 
 .reviews-scroll:active {
@@ -41,7 +42,7 @@
 .review-image {
   position: relative;
   width: 100%;
-  height: auto; /* plus flexible */
+
   overflow: hidden;
 }
 
@@ -80,6 +81,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: transform 0.4s ease;
+
  
 }
 
@@ -92,6 +94,9 @@
   width: 70%;
   height: 70%;
   object-fit: contain;
+     pointer-events: none;  /* ⛔ l'image ne pourra pas capter le clic/drag */
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .review-content {
@@ -137,5 +142,11 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-card {
+    width: 280px;
   }
 }

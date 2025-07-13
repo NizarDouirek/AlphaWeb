@@ -10,6 +10,7 @@ import Services from './pages/Service/service';
 import PricingTable from './pages/Tablepricing/table';
 import Loader from './composant/Loader/loader';
 import Carousel from './composant/Carousel/carousel';
+
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 <link
         rel="stylesheet"
@@ -37,7 +38,8 @@ function AppContent() {
   }, [loading]);
 
   return (
-    <>
+    <>    
+   
       {loading && <Loader />}
       {!loading && (
         <>
@@ -49,6 +51,8 @@ function AppContent() {
             <Route path="/About" element={<About />} />
             <Route path="/Services" element={<Services />} />
             <Route path="/table" element={<PricingTable />} />
+            
+            
           </Routes>
           <Footer />
         </>

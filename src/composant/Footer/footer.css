@@ -1,6 +1,6 @@
 .footer-content {
-   background-image: linear-gradient(#0a2e6c88, #0a2e6c9a),
-                      url('/public/footer-bg-1.jpg');
+   background-image:/* linear-gradient(#0A2E6C, #0A2E6C),*/
+                      url('/public/01.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

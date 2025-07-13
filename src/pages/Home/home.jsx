@@ -13,6 +13,7 @@ import Services from "../Service/service";
 import Process from "../Process/process";
 import CircularGallery from "../../composant/Carousel/carousel";
 import Card from "../../composant/Carousel/slide";
+import SimpleSlider from '../../composant/Carousel/slide';
 // import ModelViewer from '../../composant/Model/ModelViewer';
 const logos = [
   "./mysql.png",
@@ -205,13 +206,11 @@ export default function Home() {
   
 </div>
 
-<section className="home-carousel-section">
-
+<section className="home-carousel-section" >
   <h1 className="home-pack-h1">Nos Technologies</h1>
-  <Carousel />
-  
-
+   <Carousel />
 </section>
+
 </>
   );
 }

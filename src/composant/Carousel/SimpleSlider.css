@@ -1,0 +1,149 @@
+.carousel-wrapper {
+  max-width: 1280px;
+  margin: 40px auto;
+  padding: 20px 20px 20px;
+  position: relative;
+  
+}
+
+.slick-slide {
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.review-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: grab;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+}
+
+/* Haut de la carte */
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.avatar {
+   width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 16px;
+  transition: transform 0.3s ease;
+}
+.review-card:hover .avatar {
+  transform: scale(1.05);
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.name {
+  color: #007bff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.role {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 2px 0 6px;
+}
+
+.stars {
+  color: #ffb400;
+  font-size: 1rem;
+}
+
+.text {
+  font-size: 0.95rem;
+  color: #444;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Flèches de navigation */
+.carousel-wrapper .slick-prev,
+.carousel-wrapper .slick-next {
+  z-index: 3;
+  width: 42px;
+  height: 42px;
+  background: #007bff;
+  color: white;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel-wrapper .slick-prev {
+  left: -25px;
+}
+.carousel-wrapper .slick-next {
+  right: -25px;
+}
+.carousel-wrapper .slick-prev:hover,
+.carousel-wrapper .slick-next:hover {
+  background: #0056b3;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Dots */
+/* Dots */
+.carousel-wrapper .slick-dots {
+  position: absolute;
+  bottom: -30px; /* distance par rapport au bas des reviews */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-wrapper .slick-dots li {
+  margin: 0 6px;
+}
+
+.carousel-wrapper .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+}
+
+.carousel-wrapper .slick-dots li button:before {
+  font-size: 10px;
+  color: #bbb;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.carousel-wrapper .slick-dots li.slick-active button:before {
+  color: #007bff;
+  font-size: 12px;
+}
+

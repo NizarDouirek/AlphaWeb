@@ -1,5 +1,5 @@
 .about-page {
-  background-color:red;
+  
   width: 100%; 
   margin: auto;
 
@@ -7,7 +7,7 @@
 
 .about-hero {
   margin-top: 40px;
-  background-color:rgb(9, 21, 94);
+  
 }
 .headAbout {
   display: flex;
@@ -83,8 +83,12 @@
 
 .img11bout {
   width: 650px;
+ /*filter:grayscale(100%);*/
 
-}
+}/*
+.img11bout:hover {
+  filter: grayscale(0%);
+}*/
 .about-hero p {
   font-size: 1.15rem;
   color: #444;
@@ -151,7 +155,7 @@
   display: flex;
   text-align: center;
   padding: 0 20px;
-  background-color: #52054c;
+  
 }
 
 .about-mission h2 {
@@ -188,7 +192,6 @@
 }
 
 .why-choose-us {
-  background-color: #26afa8;
   display: flex;
   align-items: center;
   gap:7rem ;
@@ -370,7 +373,7 @@
 .section-team{
   margin-top: 200px;
   padding: 0;
-    background:linear-gradient(60deg,#0b214b,#16284b,#526da0) ;
+    
     
 }
 .section-team h1{
