@@ -6,6 +6,7 @@
 
 .about-hero {
   margin-top: 40px;
+  
 }
 .headAbout {
   display: flex;
@@ -81,8 +82,12 @@
 
 .img11bout {
   width: 650px;
+ /*filter:grayscale(100%);*/
 
-}
+}/*
+.img11bout:hover {
+  filter: grayscale(0%);
+}*/
 .about-hero p {
   font-size: 1.15rem;
   color: #444;
@@ -149,6 +154,7 @@
   display: flex;
   text-align: center;
   padding: 0 20px;
+  
 }
 
 .about-mission h2 {
@@ -185,7 +191,6 @@
 }
 
 .why-choose-us {
-  
   display: flex;
   align-items: center;
   gap:7rem ;
@@ -366,8 +371,9 @@
 
 .section-team{
   margin-top: 200px;
-  padding: 40px;
-    background:linear-gradient(60deg,#020814,#020c1f,#0b1e41) ;
+  padding: 0;
+    
+    
 }
 .section-team h1{
   font-size: 36px;

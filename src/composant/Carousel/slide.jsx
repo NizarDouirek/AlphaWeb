@@ -16,6 +16,7 @@ const Card = () => {
                 alt={techLogos[i].alt}
                 className="tech-logo"
               />
+              <div className="tooltip">{techLogos[i].alt}</div>
             </div>
           ))}
         </div>
@@ -25,18 +26,13 @@ const Card = () => {
 };
 
 const techLogos = [
-  { src: "./laravel.png", alt: "React" },
- 
+  { src: "./laravel.png", alt: "Laravel" },
   { src: "/mysql2.png", alt: "MySQL" },
-  { src: "/react.png", alt: "Node.js" },
- 
-
+  { src: "/react.png", alt: "React" },
   { src: "./figma.png", alt: "Figma" },
-  { src: "./html.png", alt: "Node.js" },
-  
-{ src: "./php.png", alt: "Php" },
-  { src: "./mongo-db.png", alt: "HTML5" },
-  
+  { src: "./html.png", alt: "HTML5" },
+  { src: "./php.png", alt: "PHP" },
+  { src: "./mongo-db.png", alt: "MongoDB" },
   { src: "./javascript.png", alt: "JavaScript" },
   { src: "./github.png", alt: "GitHub" },
 ];
@@ -47,11 +43,31 @@ const StyledWrapper = styled.div`
     height: 100px;
     object-fit: contain;
     transition: transform 0.4s ease, filter 0.4s ease;
+    z-index: 1;
   }
 
   .tech-logo:hover {
     transform: scale(1.3) rotate(3deg);
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+  }
+
+  .tooltip {
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .item:hover .tooltip {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .slider {
@@ -79,6 +95,7 @@ const StyledWrapper = styled.div`
     justify-content: center;
     animation: autoRun 10s linear infinite;
     animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1) - 10s) !important;
+    flex-direction: column;
   }
 
   @keyframes autoRun {

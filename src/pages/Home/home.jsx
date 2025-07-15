@@ -6,13 +6,14 @@ import Welcome from "../Welcome/welcome";
 import Header from "../../composant/Header/header";
 // import Particles from "react-tsparticles";
 import { FaLaptopCode, FaMobileAlt, FaServer, FaPaintBrush } from 'react-icons/fa';
-import InfiniteScroll from "../../pages/Technologies/technologies";
+import Carousel from "../../composant/Carousel/carousel";
 import Title from "../../composant/Title/title";
 import Plans from "../Pricing/cardstry";
 import Services from "../Service/service";
 import Process from "../Process/process";
 import CircularGallery from "../../composant/Carousel/carousel";
 import Card from "../../composant/Carousel/slide";
+import SimpleSlider from '../../composant/Carousel/slide';
 // import ModelViewer from '../../composant/Model/ModelViewer';
 const logos = [
   "./mysql.png",
@@ -24,6 +25,7 @@ const logos = [
 ];
 
 
+//import ModelViewer from '../../composant/Model/ModelViewer';
 
 
 export default function Home() {
@@ -169,29 +171,11 @@ export default function Home() {
     </div>
    </section>
    
-<Card/>
+
       <div className="home-technologies-container">
         <div className="home-technologies">
           <h1 className="home-pack-h1">Nos Technologies</h1>
-          {isMobile ? (
-            <div className="carousel-wrapper">
-              <div className="carousel">
-                {logos.map((logo, index) => (
-                  <div className="carousel-item" key={index}>
-                    <img src={logo} alt={`tech-${index}`} />
-                  </div>
-                ))}
-              </div>
-            </div>
-          ) : (
-            <div className="home-technologies-imgcontainer">
-              {logos.map((src, index) => (
-                <div className="home-technologies-img" key={index}>
-                  <img src={src} alt={`logo-${index}`} />
-                </div>
-              ))}
-            </div>
-          )}
+         <Card/>
         </div>
       </div>
       
@@ -219,14 +203,14 @@ export default function Home() {
       </div>
     ))}
   </div>
-</div>
-<InfiniteScroll />
-
-
-<div style={{ height: '600px', position: 'relative' }}>
-  <CircularGallery bend={0} textColor="#ffffff" borderRadius={0.05} />
   
 </div>
+
+<section className="home-carousel-section" >
+  <h1 className="home-pack-h1">Nos Technologies</h1>
+   <Carousel />
+</section>
+
 </>
   );
 }
