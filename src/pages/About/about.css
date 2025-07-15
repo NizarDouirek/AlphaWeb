@@ -1,6 +1,5 @@
 .about-page {
   
-  width: 100%; 
   margin: auto;
 
 }
@@ -32,7 +31,7 @@
   animation: glow 1.8s infinite alternate;
 }
 .about-page {
-  padding: 60px 20px;
+  /* padding: 60px 20px; */
   /* max-width: 1100px; */
   margin: auto;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -367,20 +366,20 @@
 
 .section-team{
   margin-top: 200px;
-  padding: 0;
-    background:linear-gradient(60deg,#0b214b,#16284b,#526da0) ;
+  padding: 40px;
+    background:linear-gradient(60deg,#020814,#020c1f,#0b1e41) ;
 }
 .section-team h1{
   font-size: 36px;
   font-weight: bold;
-  color: #080552;
+  color: #7b77f2;
   text-align: center;
   margin-bottom: 30px;
 }
 .p-team{
   font-size: 24px;
   font-weight: bold;
-  background: linear-gradient(90deg, #4b00ff, #00cfff);
+  background: linear-gradient(90deg, #ccc8d7, #00cfff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -389,6 +388,7 @@
 
 .team {
   /* max-width: 900px; */
+  
   display: flex;
   justify-content: space-evenly;
   
@@ -397,6 +397,7 @@
 .cardTeam-wrapper {
   width: 400px;
   height: 500px;
+  /* top: 100px; */
   position: relative;
 }
 
