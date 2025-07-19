@@ -2,6 +2,7 @@ import React from "react";
 import './about.css';
 import { Link } from "react-router-dom";
 import { FaGlobeAmericas, FaUserTie, FaCheckCircle, FaSmile } from "react-icons/fa"
+import AnimatedCounter from "../../composant/animatecounter/numbercount";
 
 
 export default function About() {
@@ -80,44 +81,45 @@ Enthusiastically maximize secure, cost-effective solutions tailored to your goal
 <section className="stats-section">
   <div className="stat-item">
     <FaGlobeAmericas className="stat-icon" />
-    <h3>120<span>+</span></h3>
+    <p><AnimatedCounter to={120} duration={2200} /><span>+</span></p>
     <p>Clients Worldwide</p>
   </div>
   <div className="stat-item">
     <FaUserTie className="stat-icon" />
-    <h3>60<span>+</span></h3>
+    <p><AnimatedCounter to={60} duration={2500} /><span>+</span></p>
     <p>Experience Engineers</p>
   </div>
   <div className="stat-item">
     <FaCheckCircle className="stat-icon" />
-    <h3>70<span>+</span></h3>
+    <p><AnimatedCounter to={70} duration={2500} /><span>+</span></p>
     <p>Completed Projects</p>
   </div>
   <div className="stat-item">
     <FaSmile className="stat-icon" />
-    <h3>120<span>%</span></h3>
+    <p><AnimatedCounter to={120} duration={2000} /><span>%</span></p>
     <p>Satisfaction Customers</p>
   </div>
 </section>
 
 
  <section className="about-mission">
-          <div>
-  <h2>Our Mission</h2>
+          <div className="content-mission">
+  <h2>24/7 Ready to our teams for supports</h2>
   <p>
-    We communicate clearly, because in a world crowded with over-the-top marketing, simple wins.
+    Completely exploit bleeding-edge web-readiness diverse interfaces. 
+    Assertively reconceptualize interdependent competencies technically 
+    sound infomediaries enhance team marketing
   </p>
-  <p>
-    We are not rock stars, ninjas or any other disingenuous buzz term. We are creative professionals.
-  </p>
-  <p>
-    Before you can market a business, you need to know its story.
-  </p>
+  <div className="supportIcn">
+    <i className="fas fa-headset" style={{ color: "#764ba2", marginRight: "6px" }}></i>  
+    <h5>We Provides all Kinds of IT Solutions & Services
+That Increase Your Success.</h5>
+  </div>
   <div className="mission-button">
-    <Link to="/AboutDetails" className="about-btn">Find out more</Link>
+    <Link to="/AboutDetails" className="about-btn">Contact us</Link>
   </div>
   </div>
-  <img src="about2.webp" alt="" />
+  <img src="support.jpg" alt="" />
 </section>
 
 <section className="section-team">

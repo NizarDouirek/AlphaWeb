@@ -1,6 +1,8 @@
 import React from "react";
 import './service.css';
 import { Link } from "react-router-dom";
+import { FaGlobeAmericas, FaUserTie, FaCheckCircle, FaSmile } from "react-icons/fa"
+import AnimatedCounter from "../../composant/animatecounter/numbercount";
 
 export default function Services() {
   return (
@@ -51,6 +53,28 @@ export default function Services() {
 </div>
 
       </section>
-    </div></>
+    </div>
+    <section className="stats-section">
+      <div className="stat-item">
+        <FaGlobeAmericas className="stat-icon" />
+        <p><AnimatedCounter to={120} duration={2200} /><span>+</span></p>
+        <p>Clients Worldwide</p>
+      </div>
+      <div className="stat-item">
+        <FaUserTie className="stat-icon" />
+        <p><AnimatedCounter to={60} duration={2500} /><span>+</span></p>
+        <p>Experience Engineers</p>
+      </div>
+      <div className="stat-item">
+        <FaCheckCircle className="stat-icon" />
+        <p><AnimatedCounter to={70} duration={2500} /><span>+</span></p>
+        <p>Completed Projects</p>
+      </div>
+      <div className="stat-item">
+        <FaSmile className="stat-icon" />
+        <p><AnimatedCounter to={120} duration={2000} /><span>%</span></p>
+        <p>Satisfaction Customers</p>
+      </div>
+    </section></>
   );
 }
