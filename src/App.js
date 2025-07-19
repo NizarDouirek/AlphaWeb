@@ -51,8 +51,6 @@ function AppContent() {
             <Route path="/About" element={<About />} />
             <Route path="/Services" element={<Services />} />
             <Route path="/table" element={<PricingTable />} />
-            
-            
           </Routes>
           <Footer />
         </>

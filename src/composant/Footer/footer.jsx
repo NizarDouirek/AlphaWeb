@@ -1,83 +1,82 @@
-import React from 'react';
-import './footer.css';
-import Tooltip from './icons';
+import React from "react";
+import "./footer.css";
+import Tooltip from "./icons";
+
 export default function Footer() {
-    return (
-        <footer>
-            <div className="footer-content">
-                <div className='newsletter1'>
-                    <div className='newsletter-h2'>
-                        <h2>Subscribe to our Newsletter</h2>
-                        <p>Get the latest updates and offers.</p>
-                    </div>
-                    <div className='newsletter-form'>
-                        <form onSubmit={(e) => {
-                            e.preventDefault();
-                            alert("Subscribed!");
-                        }}>
-                            <input type="email" placeholder="Enter your email" required style={{ width: "400px" }} />
-                            <button type="submit" style={{ marginTop: "10px", marginRight: "20px" }}>Subscribe</button>
-                        </form>
-                    </div>
-                </div>
-                <div className='footer-container'>
-                    <div className='footer-paragraph' style={{ marginLeft: "-150px" }}>
-                        <div className='footer-img'></div>
-                        <div className='footer-p'>
-                            <p>Lorem ipsum dolor, sit amet consectetur <br /> adipisicing elit.
-                                Voluptatibus facere modi <br />possimus dignissimos, aliquam nobis eaque? <br />
-                                Voluptatem magnam quisquam rem. </p>
-                        </div>
-                    </div>
+  return (
+    <footer>
+      <div className="footer-content">
+        <div className="footer-container">
+          {/* Colonne 1 */}
+          <div className="footer-brand">
+            <div className="footer-img"></div>
+            <p>
+              We are many variations of passages available but the majority
+              have suffered alteration in some form by injected humour words
+              believable.
+            </p>
+            <ul className="footer-contact">
+              <li>
+                <i className="bx bx-phone"></i> 
+                <span>+2 123 654 7898</span>
+              </li>
+              <li>
+                <i className="bx bx-map"></i> 
+                <span>25/B Milford Road, New York</span>
+              </li>
+              <li>
+                <i className="bx bx-envelope"></i> 
+                <span>info@example.com</span>
+              </li>
+            </ul>
+          </div>
 
+          {/* Colonne 2 */}
+          <div className="footer-column">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">Terms Of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Latest Blog</a></li>
+            </ul>
+          </div>
 
-                    <div className='footer-quick'>
-                        <h2>Quick Links</h2>
-                        <ul>
-                            <li><i class='bx bx-right-arrow-alt'></i><a href="#">Home</a></li>
-                            <li><i class='bx bx-right-arrow-alt'></i><a href="#">About Us</a></li>
-                            <li><i class='bx bx-right-arrow-alt'></i><a href="#">Services</a></li>
-                            <li><i class='bx bx-right-arrow-alt'></i><a href="#">Portfolio</a></li>
+          {/* Colonne 3 */}
+          <div className="footer-column">
+            <h2>Our Services</h2>
+            <ul>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">IT Management</a></li>
+              <li><a href="#">Cloud Services</a></li>
+              <li><a href="#">Machine Learning</a></li>
+              <li><a href="#">Cyber Security</a></li>
+            </ul>
+          </div>
 
-                        </ul>
-                    </div>
-                    <div className='footer-resources'>
-                        <h2>Resources</h2>
-                        <ul>
-                            <li><i class='bx bx-right-arrow-alt'></i><a href="">support</a></li>
-                            <li><i class='bx bx-right-arrow-alt'></i><a href="">dashboard</a></li>
-                            <li><i class='bx bx-right-arrow-alt'></i><a href="">drivers</a></li>
-                            <li><i class='bx bx-right-arrow-alt'></i><a href="">services</a></li>
-                        </ul>
-                    </div>
-                    <div className='footer-conatct' >
-                        <h2>Contact</h2>
-                        <ul>
-                            <li><i className='bx bx-envelope icon3' ></i><a href="">example@support.com</a></li>
-                            <li><i class='bx bx-map'></i><a href="">5 Xyz st., Abc, alexandria, egypt.</a></li>
-                            <li><i class='bx bx-phone'></i><a href="">+20123456789 </a></li>
+          {/* Colonne 4 */}
+          <div className="footer-column">
+            <h2>Newsletter</h2>
+            <p>Subscribe to get latest updates and news</p>
+            <form onSubmit={(e) => { e.preventDefault(); alert("Subscribed!"); }}>
+              <input type="email" placeholder="Your Email" required />
+              <button type="submit">SUBSCRIBE NOW</button>
+            </form>
+          </div>
+        </div>
 
-                        </ul>         <div className='newsletter'>
-                            <h2>Follow Us</h2>
-                            <p>Connect with us on social media.</p>
-                            <ul>
-              <Tooltip />
-                            </ul>
-                        </div>
-                    </div>
+        {/* Bas du footer */}
+<div className="footer-bottom">
+  <p>&copy; {new Date().getFullYear()} TECHXO. All Rights Reserved.</p>
+  <div className="footer-bottom-icons">
+    <Tooltip />
+  </div>
+</div>
 
-                </div>
-
-                <div></div>
-                <div >
-                    <p style={{ marginTop: "75px", textAlign: "center" }}>
-                        &copy; {new Date().getFullYear()} AlphaWeb. All rights reserved.
-
-                    </p>
-                </div>
-            </div>
-
-        </footer>
-    );
-};
-
+      </div>
+    </footer>
+  );
+}
