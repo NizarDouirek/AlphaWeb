@@ -3,6 +3,7 @@ import './about.css';
 import { Link } from "react-router-dom";
 import { FaGlobeAmericas, FaUserTie, FaCheckCircle, FaSmile } from "react-icons/fa"
 import AnimatedCounter from "../../composant/animatecounter/numbercount";
+import Carousel from "../../composant/caro/caro";
 
 
 export default function About() {
@@ -124,7 +125,8 @@ That Increase Your Success.</h5>
 
 <section className="section-team">
           <h1>Our Team Members</h1>
-          <h2 className="p-team">See Our Skilled Expert Team</h2>
+          <h2 className="p-team">High Professional Team Ready
+To Develope Your Business</h2>
     
 <section className="team">
     
@@ -133,7 +135,7 @@ That Increase Your Success.</h5>
     <div className="cardTeam">
       <div className="cardTeam-image">
         <img
-          src="https://image.ibb.co/dUTfmJ/profile_img.jpg"
+          src="we.jpg"
           alt="profile one"
         />
       </div>
@@ -176,7 +178,7 @@ That Increase Your Success.</h5>
     <div className="cardTeam profile-two">
       <div className="cardTeam-image profile-img--two">
         <img
-          src="https://image.ibb.co/c9rY6J/profile02.jpg"
+          src="we.jpg"
           alt="profile two"
         />
       </div>
@@ -217,7 +219,7 @@ That Increase Your Success.</h5>
     <div className="cardTeam">
       <div className="cardTeam-image">
         <img
-          src="https://image.ibb.co/dUTfmJ/profile_img.jpg"
+          src="we.jpg"
           alt="profile one"
         />
       </div>

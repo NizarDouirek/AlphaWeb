@@ -54,27 +54,6 @@ export default function Services() {
 
       </section>
     </div>
-    <section className="stats-section">
-      <div className="stat-item">
-        <FaGlobeAmericas className="stat-icon" />
-        <p><AnimatedCounter to={120} duration={2200} /><span>+</span></p>
-        <p>Clients Worldwide</p>
-      </div>
-      <div className="stat-item">
-        <FaUserTie className="stat-icon" />
-        <p><AnimatedCounter to={60} duration={2500} /><span>+</span></p>
-        <p>Experience Engineers</p>
-      </div>
-      <div className="stat-item">
-        <FaCheckCircle className="stat-icon" />
-        <p><AnimatedCounter to={70} duration={2500} /><span>+</span></p>
-        <p>Completed Projects</p>
-      </div>
-      <div className="stat-item">
-        <FaSmile className="stat-icon" />
-        <p><AnimatedCounter to={120} duration={2000} /><span>%</span></p>
-        <p>Satisfaction Customers</p>
-      </div>
-    </section></>
+    </>
   );
 }
