@@ -1,0 +1,41 @@
+.carousel-container {
+  width: 100%;
+  margin-top: 40px;
+  overflow: hidden;
+  background: linear-gradient(to right, #4e2abe, #d93685);
+  white-space: nowrap;
+  padding: 10px 0;
+  position: relative;
+}
+.carousel-container:hover .carousel-track{
+  animation-play-state: paused;
+}
+
+.carousel-track {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-item {
+  display: inline-block;
+  margin: 0 30px;
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.carousel-item:hover {
+  color: #451862; /* Jaune doré */
+  
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

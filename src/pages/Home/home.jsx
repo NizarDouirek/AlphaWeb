@@ -14,6 +14,7 @@ import Process from "../Process/process";
 import CircularGallery from "../../composant/Carousel/carousel";
 import Card from "../../composant/Carousel/slide";
 import SimpleSlider from '../../composant/Carousel/slide';
+import Caro from "../../composant/caro/caro";
 // import ModelViewer from '../../composant/Model/ModelViewer';
 const logos = [
   "./mysql.png",
@@ -140,37 +141,14 @@ export default function Home() {
 
       </section>
     </div>
- <div className="marquee-container2">
-      <div className="marquee-content2">
-        <p>
-          {repeatedItems.map((item, index) => (
-            <span className="marquee-item" key={index}>
-              <span className="marquee-icon">{item.icon}</span>
-              {item.label} -
-            </span>
-          ))}
-        </p>
-      </div>
-    </div>
+ <Caro/>
+    
      {/* <div className="home-process-container"> */}
           
      <Process/>
     
 {/* </div> */}
 
-    <section className="ContactHomme">
-    <div>
-      <div className="contentCH">
-        <p className="p1CH">We Carry More Than Just Good Coding Skills</p>
-        <p className="p2CH">Let's Discuss your Projects</p>
-        <p className="p3CH">We pride ourselves with our ability to perform and deliver results. Use the form below to discuss your project needs with our team, we will get back asap.</p>
-        <div className="btn-tel">
-         <Link to="/Contact"><button className="btn-quotes3">Get Quotes</button></Link><p>(+212) 783692373</p>
-        </div>
-      </div>
-    </div>
-   </section>
-   
 
       <div className="home-technologies-container">
         <div className="home-technologies">
@@ -205,8 +183,22 @@ export default function Home() {
   
 </div>
 
+    <section className="contact-cta">
+      <img src="cont3.webp" alt="ring" className="cta-ring" />
+      <div className="cta-content">
+        <h2>Need any project ? we're here</h2>
+        <p>Feel free to contact with us. Our team ready to help</p>
+      </div>
+      <div>
+      <Link to="/Contact" className="cta-button">
+        CONTACT WITH US <span>↗</span>
+      </Link>
+      </div>
+      <img src="cont1.webp" alt="rocket" className="cta-rocket" />
+      <img src="cont2.webp" alt="paper plane" className="cta-plane" />
+    </section>
 <section className="home-carousel-section" >
-  <h1 className="home-pack-h1">Nos Technologies</h1>
+  <h1 className="home-pack-h1">TESTIMONIALS</h1>
    <Carousel />
 </section>
 

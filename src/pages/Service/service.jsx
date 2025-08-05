@@ -1,6 +1,8 @@
 import React from "react";
 import './service.css';
 import { Link } from "react-router-dom";
+import { FaGlobeAmericas, FaUserTie, FaCheckCircle, FaSmile } from "react-icons/fa"
+import AnimatedCounter from "../../composant/animatecounter/numbercount";
 
 export default function Services() {
   return (
@@ -51,6 +53,7 @@ export default function Services() {
 </div>
 
       </section>
-    </div></>
+    </div>
+    </>
   );
 }
