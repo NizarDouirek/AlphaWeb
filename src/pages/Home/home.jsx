@@ -8,7 +8,7 @@ import Header from "../../composant/Header/header";
 import { FaLaptopCode, FaMobileAlt, FaServer, FaPaintBrush } from 'react-icons/fa';
 import Carousel from "../../composant/Carousel/carousel";
 import Title from "../../composant/Title/title";
-import Plans from "../Pricing/cardstry";
+import PricingSection from "../Pricing/cardstry";
 import Services from "../Service/service";
 import Process from "../Process/process";
 import CircularGallery from "../../composant/Carousel/carousel";
@@ -179,10 +179,9 @@ export default function Home() {
         </div>
       </div>
       
-      <div className="home-plans-container">
-        <h1 className="home-pack-h1">Pack Creation de Site Web</h1>
-        <Plans />
-      </div>
+
+        <PricingSection />
+    
      <div className="faq-container">
   <h2>FAQ</h2>
   <h1 className="faq-caption">Your IT Questions, Answered</h1>

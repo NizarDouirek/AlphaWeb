@@ -1,129 +1,82 @@
-import React, { useState } from "react";
-import "./trycard.css";
-import { useNavigate } from "react-router-dom";
-const Plans = () => {
-  //const [activePlan, setActivePlan] = useState(1); // 0: Individual, 1: Shared, 2: Group
+import React from "react";
+import "./PricingSection.css";
 
-  //const handleClick = (index) => {
-  // setActivePlan(index);
-  // };
-const navigate = useNavigate();
+const plans = [
+  {
+    title: "PERSONAL",
+    price: "$5.60",
+    support: "Free 3 Months Solutions Support",
+    features: [
+      { label: "Custom Website Design", included: true },
+      { label: "Priority Bug Fixes & Updates", included: true },
+      { label: "Basic & Technical SEO", included: true },
+      { label: "System Integration Support", included: false },
+      { label: "24/7 Dedicated IT Assistance", included: false },
+    ],
+  },
+  {
+    title: "ENTERPRISE",
+    price: "$25.60",
+    support: "Free 6 Months Solutions Support",
+    features: [
+      { label: "Custom Website Design", included: true },
+      { label: "Priority Bug Fixes & Updates", included: true },
+      { label: "Basic & Technical SEO", included: true },
+      { label: "System Integration Support", included: true },
+      { label: "24/7 Dedicated IT Assistance", included: false },
+    ],
+  },
+  {
+    title: "PREMIUM",
+    price: "$120.60",
+    support: "Free 12 Months Solutions Support",
+    features: [
+      { label: "Custom Website Design", included: true },
+      { label: "Priority Bug Fixes & Updates", included: true },
+      { label: "Basic & Technical SEO", included: true },
+      { label: "System Integration Support", included: true },
+      { label: "24/7 Dedicated IT Assistance", included: true },
+    ],
+  },
+];
 
-  const handleClick = () => {
-    navigate("/table"); // vers ta page cible
-  };
-
+const PricingSection = () => {
   return (
-    <>
-      <div className="outer-container" >
-
-        {/* <div className={`container container1 ${activePlan === 0 ? "active" : ""}`}
-     onClick={() => handleClick(0)}>  <div className={`container container1 ${activePlan === 0 ? "active" : ""}`}
-        onClick={() => handleClick(0)}>*/}
-        <div className="container container1">
-
-          <div className="inner_container">
-            <h2 className="title">Starter</h2>
-
-            <div className="main_number">2</div>
-
-
-
-
-
-            <div className="container_text" >
-              <div className="container_text1">
-                <p className="home-pack-card-h2">2599 DH</p>
-                <p className="home-pack-card-p">au lieu</p>
-                <p className="home-pack-card-h3">3999 DH</p>
-              </div>
-
-              <div className="container_text2" >
-                <div className="home-pack-div2" ><i className='bx bx-check'></i><p>Site vitrine de 1 à 3 pages</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Design professionnel et responsive</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Intégration de vos contenus</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>1 révision incluse</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Livraison en 5 jours</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Nom de domaine + hébergement 1 an</p></div>
-
-
-              </div>
-            </div>
-
-            <a href="#"><span>Continue</span></a>
-
-
-          </div>
-
+          <div className="home-plans-container">
+            <h1 className="home-pack-h1">Pack Creation de Site Web</h1>
+    <div className="pricing-wrapper">
+       
+      {plans.map((plan, index) => (
+        <div
+          className={`pricing-card ${
+            index === 1 ? "middle-card" : ""
+          }`}
+          key={index}
+        >
+          
+          <div className="top-gradient-bar" />
+          <div className="plan-title">{plan.title}</div>
+          <div className="plan-price"><p>{plan.price}</p></div>
+          <div className="plan-support">*{plan.support}*</div>
+          <hr className="divider" />
+          <div className="features-label">Feature Description</div>
+          <ul className="feature-list">
+            {plan.features.map((f, i) => (
+              <li key={i} className="feature-item">
+                <span className={f.included ? "icon check" : "icon cross"}>
+                  {f.included ? "✔" : "✖"}
+                </span>
+                {f.label}
+              </li>
+            ))}
+          </ul>
+          <button className="choose-btn">
+            <span className="circle-plus">+</span> Choose Plan
+          </button>
         </div>
-
-        {/*<div
-        className={`container container2 ${activePlan === 1 ? "active" : ""}`}
-        onClick={() => handleClick(1)}
-      >*/}<div className="container container2">
-          <div className="ribbon-wrapper">
-            <div className="ribbon">Populaire</div>
-          </div>
-          <div className="inner_container">
-            <div className="title">Pro</div>
-            <div className="main_number">1</div>
-            <div className="container_text">
-              <div className="container_text1" >
-                <p className="home-pack-card-h2">2999 DH</p>
-                <p className="home-pack-card-p">au lieu</p>
-                <p className="home-pack-card-h3">4999 DH</p>
-              </div>
-              <div className="container_text2">
-
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Site complet de 5 à 7 pages</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Design sur-mesure et responsive</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Formulaire de contact intégré</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Optimisation SEO de base</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>2 révisions incluses</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Sécurité SSL + hébergement 1 an</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Adresses e-mail professionnelles</p></div>
-
-              </div>
-            </div>
-          </div>
-          <a href="#"><span>Continue</span></a>
-        </div>
-
-        {/*<div
-        className={`container container3 ${activePlan === 2 ? "active" : ""}`}
-        onClick={() => handleClick(2)}
-      >*/}<div className="container container3">
-          <div className="inner_container">
-            <div className="title">Premium</div>
-            <div className="main_number">3</div>
-            <div className="container_text" >
-              <div className="container_text1" >
-                <p className="home-pack-card-h2">5990 DH</p>
-                <p className="home-pack-card-p">au lieu</p>
-                <p className="home-pack-card-h3">7999 DH</p>
-              </div>
-              <div className="container_text2"  >
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Site e-commerce ou sur-mesure</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Design UX/UI personnalisé</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Référencement SEO avancé</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Intégration paiement, réservation…</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Révisions illimitées pendant 1 mois</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Support technique prioritaire</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Formation + guide d’utilisation</p></div>
-                <div className="home-pack-div2"><i className='bx bx-check'></i><p>Maintenance offerte pendant 1 mois</p></div>
-
-              </div>
-            </div>
-          </div>
-          <a href="#"><span>Continue</span></a>
-        </div>
-            
-      </div>
- <button className="try" onClick={handleClick} >Voir plus</button>
-
-    </>
-
+      ))}
+    </div></div>
   );
 };
 
-export default Plans;
+export default PricingSection;
