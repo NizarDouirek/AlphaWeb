@@ -55,7 +55,7 @@ const PricingSection = () => {
         >
           
           <div className="top-gradient-bar" />
-          <div className="plan-title">{plan.title}</div>
+          <div className="plan-title2">{plan.title}</div>
           <div className="plan-price"><p>{plan.price}</p></div>
           <div className="plan-support">*{plan.support}*</div>
           <hr className="divider" />

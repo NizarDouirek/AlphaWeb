@@ -73,8 +73,8 @@
 }
 
 /* ✅ Titres avec ° doré et discret */
-.plan-title {
-  font-size: 0.9rem;
+.plan-title2 {
+  font-size: 1.1rem;
   font-weight: 600;
   color: #ffc800;
   letter-spacing: 1px;
@@ -98,6 +98,7 @@
   line-height: 1;
   margin-top: -30px;
   
+  
 }
 
 .plan-support {
@@ -108,7 +109,8 @@
   margin-bottom: 0.8rem;
   display: block;
   white-space: pre-line;
-  margin-top: -20px;
+ 
+  
 }
 
 .divider {
