@@ -26,13 +26,13 @@ export default function Header() {
           <li><Link to="/Home" onClick={() => setMenuOpen(false)}>Home</Link></li>
           <li><Link to="/About"  onClick={() => setMenuOpen(false)}>About</Link></li>
           <li><Link to="/Services"  onClick={() => setMenuOpen(false)}>Services</Link></li>
-          <li><Link to="/Home"  onClick={() => setMenuOpen(false)}>Team</Link></li>
+          <li><Link to="/Team"  onClick={() => setMenuOpen(false)}>Team</Link></li>
           <li><Link to="/table" onClick={() => setMenuOpen(false)}>Pack</Link></li>
           <li><Link to="/Contact" onClick={() => setMenuOpen(false)}>Contact Us</Link></li>
         </ul>
       </nav>
       <div className='btn-header'>
-         <Link to="/Contact"> <button className="btn-quotes">Get Quotes</button></Link> 
+         <Link to="/Contact"> <button className="btn-quotes">Contactez nous</button></Link> 
 
       <ThemeToggle />
       </div>
