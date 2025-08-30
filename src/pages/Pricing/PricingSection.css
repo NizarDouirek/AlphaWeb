@@ -1,0 +1,194 @@
+.home-plans-container {
+  
+  gap: 2.5rem;
+  padding: 4rem 2rem;
+   width: 100%;
+  flex-wrap: wrap;
+  background-color: #0d112b;
+  position: relative;
+
+}
+.home-plans-container h1{
+  color: #fff;
+  font-size: 2.5rem;
+}
+.pricing-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.pricing-card {
+  background: #0d112b;
+  border-radius: 24px;
+  width: 360px;
+  padding: 2.5rem 2rem;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  backdrop-filter: blur(20px);
+
+  /* ✅ dégradé en border */
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.pricing-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #2e7eff, #00c6ff);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+
+.middle-card {
+  background: linear-gradient(
+    135deg,
+    rgba(60, 112, 255, 0.3),
+    rgba(0, 0, 0, 0.1) 70%
+  );
+}
+
+.top-gradient-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  
+}
+
+/* ✅ Titres avec ° doré et discret */
+.plan-title2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffc800;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  position: relative;
+  margin-top: -30px;
+}
+
+.plan-title::before {
+  content: "";
+  font-size: 0.9rem;
+  margin-right: 2px;
+}
+
+/* ✅ Prix bien blanc et lisible */
+.plan-price p {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #fff;
+  line-height: 1;
+  margin-top: -30px;
+  
+  
+}
+
+.plan-support {
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+  display: block;
+  white-space: pre-line;
+ 
+  
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 0.9rem;
+  background: linear-gradient(to right, #2f96d1, transparent);
+}
+
+.features-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #73a8ff;
+  margin-bottom: 1rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  width: 100%;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.05rem;
+  margin-bottom: 0.75rem;
+  color: #bbb;
+}
+
+.feature-item .icon {
+  font-size: 1.2rem;
+  margin-right: 0.6rem;
+}
+
+/* ✅ Icônes bleues modernes et gris clair */
+.feature-item .check {
+  color: #3dcfff;
+}
+
+.feature-item .cross {
+  color: #666;
+}
+
+.choose-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #7a5cff, #ff6ec4);
+  color: white;
+  font-weight: bold;
+  font-size: 0.95rem;
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 100px;
+  width: 90%;
+  align-self: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.choose-btn:hover {
+  transform: scale(1.05);
+}
+
+.circle-plus {
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.6rem;
+  border: 2px solid #fff;
+}
