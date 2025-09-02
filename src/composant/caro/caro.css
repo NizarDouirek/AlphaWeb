@@ -3,32 +3,52 @@
   margin-top: 40px;
   overflow: hidden;
   background: linear-gradient(to right, #4e2abe, #d93685);
-  white-space: nowrap;
-  padding: 10px 0;
+  padding: 15px 0;
   position: relative;
 }
-.carousel-container:hover .carousel-track{
+
+.carousel-container:hover .carousel-track {
   animation-play-state: paused;
 }
 
 .carousel-track {
   display: inline-block;
-  animation: scroll 20s linear infinite;
+  animation: scroll 25s linear infinite;
+  white-space: nowrap;
 }
 
 .carousel-item {
-  display: inline-block;
-  margin: 0 30px;
-  font-size: 28px;
-  color: white;
-  font-weight: bold;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 40px;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .carousel-item:hover {
-  color: #451862; /* Jaune doré */
-  
+  transform: scale(1.1);
+}
+
+.tech-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tech-logo:hover {
+  transform: scale(1.2) rotate(5deg);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+}
+
+.tech-name {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 @keyframes scroll {

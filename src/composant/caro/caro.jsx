@@ -1,25 +1,30 @@
 import React from "react";
 import "./caro.css";
 
-const items = [
-  "⭐ PRODUCT DESIGN",
-  "⭐ WEB DEVELOPMENT",
-  "⭐ BRANDING",
-  "⭐ CYBER SECURITY",
-  "⭐ WEBSITE DESIGN",
-  "⭐ DIGITAL STRATEGY"
+const techLogos = [
+  { src: "./laravel.png", alt: "Laravel" },
+  { src: "/mysql2.png", alt: "MySQL" },
+  { src: "/react.png", alt: "React" },
+  { src: "./figma.png", alt: "Figma" },
+  { src: "./html.png", alt: "HTML5" },
+  { src: "./php.png", alt: "PHP" },
+  { src: "./mongo-db.png", alt: "MongoDB" },
+  { src: "./javascript.png", alt: "JavaScript" },
+  { src: "./github.png", alt: "GitHub" },
 ];
 
-export default function Caro() {
-  const repeatedItems = [...items, ...items]; // Dupliquer pour effet infini
+export default function TechCarousel() {
+  // On double le tableau pour un effet infini
+  const repeatedItems = [...techLogos, ...techLogos];
 
   return (
     <div className="carousel-container">
       <div className="carousel-track">
-        {repeatedItems.map((item, index) => (
-          <span className="carousel-item" key={index}>
-            {item}
-          </span>
+        {repeatedItems.map((logo, index) => (
+          <div className="carousel-item" key={index}>
+            <img src={logo.src} alt={logo.alt} className="tech-logo" />
+            <span className="tech-name">{logo.alt}</span>
+          </div>
         ))}
       </div>
     </div>

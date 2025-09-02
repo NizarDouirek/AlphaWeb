@@ -17,14 +17,14 @@ const reviews = [
     name: "Fizzi Brandon",
     role: "Freelancer",
     text: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accumsan quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam.",
-    img: "/testimonial-2.jpg",
+    img: "/Generated Image September 02, 2025 - 9_58PM.jpeg",
     rating: 5,
   },
   {
     name: "Jhone Doe",
     role: "CFO",
     text: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accumsan quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam.",
-    img: "/testimonial-4.jpg",
+    img: "/Generated Image September 02, 2025 - 10_00PM.jpeg",
     rating: 5,
   }, 
   {

@@ -115,41 +115,50 @@ export default function Contact() {
       </div>
 
       <div className="contact-info-section">
-        <h2>Contact Info</h2>
-        <div className="info-cards">
-          {infos.map((item, index) => (
-            <div key={index} className="info-card">
-              <div className="icon">{item.icon}</div>
-              <div className="text-content">
-                <h3>{item.title}</h3>
-                <p><a href="">{item.text}</a></p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+  <h2>Contact Info</h2>
+  <div className="contact-info-container">
+    <div className="info-cards">
+      {infos.map((item, index) => (
+        <a 
+          key={index} 
+          href={
+            item.title === "Phone" ? `tel:${item.text}` :
+            item.title === "Email" ? `mailto:${item.text}` :
+            item.title === "Address" ? `https://www.google.com/maps?q=${encodeURIComponent(item.text)}` :
+            "#"
+          }
+          target="_blank"
+          rel="noopener noreferrer"
+          className="info-card"
+        >
+          <div className="icon">{item.icon}</div>
+          <div className="text-content">
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
 
-      <div className="faq-container">
+
+      
         
-        <h1 className="faq-caption">Your IT Questions, Answered</h1>
-        <div className="faq-list">
-          {faqItems.map((item, index) => (
-            <div
-              key={index}
-              className={`faq-item ${openIndex === index ? "open" : ""}`}
-              onClick={() => toggleAccordion(index)}
-            >
-              <div className="faq-question">
-                {item.question}
-                <span className="faq-icon">{openIndex === index ? "▼" : "▶"}</span>
-              </div>
-              {openIndex === index && (
-                <div className="faq-answer">{item.answer}</div>
-              )}
-            </div>
-          ))}
-        </div>
-      </div>
+        <h1 className="faq-caption">📍 Notre Localisation</h1>
+      <div className="map-container">
+     
+      <iframe
+        title="Google Maps Casablanca Nassim"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.7505892726355!2d-7.620796284800345!3d33.5446329807465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7ce2dd1b4a6d5%3A0xf3cfabe59f123456!2sNassim%2C%20Casablanca!5e0!3m2!1sfr!2sma!4v1693839392834!5m2!1sfr!2sma"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
     </div>
   );
 }

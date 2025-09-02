@@ -141,7 +141,7 @@ export default function Home() {
 
       </section>
     </div>
- <Caro/>
+
     
      {/* <div className="home-process-container"> */}
           
@@ -153,7 +153,7 @@ export default function Home() {
       <div className="home-technologies-container">
         <div className="home-technologies">
           <h1 className="home-pack-h1">Nos Technologies</h1>
-         <Card/>
+         <Caro/>
         </div>
       </div>
       
