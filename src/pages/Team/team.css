@@ -17,6 +17,7 @@
 
 /* Section */
 .team-section {
+  margin-top: 40px;
   padding: 50px 20px;
   background: #f9f9f9;
   font-family: Arial, sans-serif;
@@ -25,21 +26,27 @@
 
 /* Header */
 .team-header h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+   font-size: 2.5rem;
+  color: #080552;
+  
 }
 
 .team-header p {
-  font-size: 1rem;
-  color: #555;
-  max-width: 700px;
-  margin: 0 auto 40px;
+margin-top: 10px;
+margin-left: 270px;
+  font-size: 1.3rem;
+  background: linear-gradient(90deg, #1d065c, #005eff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 800px;
+
 }
 
 /* Grid */
 .team-grid {
+  margin-top: 60px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   justify-items: center;
 }
@@ -47,6 +54,7 @@
 /* Card */
 .team-card {
   background: #fff;
+  width: 250px;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -60,8 +68,8 @@
 
 /* Photo */
 .team-photo {
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto 15px;
   border-radius: 50%;
   overflow: hidden;
@@ -85,33 +93,41 @@
   font-weight: bold;
   margin-bottom: 5px;
 }
+/* Text */
+.team-name {
+  font-size: 1.2rem;
+  color: #222;
+  margin: 8px 0 4px;
+}
 
 .team-role {
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 15px;
+  color: #888;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
 }
 
 /* Socials */
 .team-socials {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.social-btn {
-  display: inline-block;
-  padding: 8px;
+.team-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background: #eee;
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
+  background: #f1f1f1;
+  color: #555;
+  font-size: 20px;
   transition: all 0.3s ease;
 }
 
-.social-btn:hover {
-  background: #0077ff;
+.team-socials a:hover {
+  background: #5d5f62;
   color: #fff;
   transform: scale(1.1);
 }

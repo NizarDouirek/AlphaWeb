@@ -81,22 +81,22 @@ Enthusiastically maximize secure, cost-effective solutions tailored to your goal
 
 <section className="stats-section">
   <div className="stat-item">
-    <FaGlobeAmericas className="stat-icon" />
+    <img src="client.png" className="stat-img" />
     <p><AnimatedCounter to={120} duration={2200} /><span>+</span></p>
     <p>Clients Worldwide</p>
   </div>
   <div className="stat-item">
-    <FaUserTie className="stat-icon" />
+   <img src="customer.png" className="stat-img" />
     <p><AnimatedCounter to={60} duration={2500} /><span>+</span></p>
     <p>Experience Engineers</p>
   </div>
   <div className="stat-item">
-    <FaCheckCircle className="stat-icon" />
+   <img src="verification.png" className="stat-img" />
     <p><AnimatedCounter to={70} duration={2500} /><span>+</span></p>
     <p>Completed Projects</p>
   </div>
   <div className="stat-item">
-    <FaSmile className="stat-icon" />
+    <img src="reputation.png" className="stat-img" />
     <p><AnimatedCounter to={120} duration={2000} /><span>%</span></p>
     <p>Satisfaction Customers</p>
   </div>
@@ -135,7 +135,7 @@ To Develope Your Business</h2>
     <div className="cardTeam">
       <div className="cardTeam-image">
         <img
-          src="we.jpg"
+          src="pro41.jpeg"
           alt="profile one"
         />
       </div>
@@ -167,7 +167,7 @@ To Develope Your Business</h2>
         <h2>
          Nizar Douirek
           <br />
-          <span className="job-title">Web Developer</span>
+          <span className="job-title">Founder & CEO</span>
         </h2>
       </div>
     </div>
@@ -178,7 +178,7 @@ To Develope Your Business</h2>
     <div className="cardTeam profile-two">
       <div className="cardTeam-image profile-img--two">
         <img
-          src="we.jpg"
+          src="bel-homme-souriant-a-la-recherche-d-incredulite.jpg"
           alt="profile two"
         />
       </div>
@@ -219,7 +219,7 @@ To Develope Your Business</h2>
     <div className="cardTeam">
       <div className="cardTeam-image">
         <img
-          src="we.jpg"
+          src="portrait-d-une-jeune-femme-d-affaires-tenant-des-lunettes-a-la-main-sur-fond-gris.jpg"
           alt="profile one"
         />
       </div>
@@ -249,7 +249,7 @@ To Develope Your Business</h2>
 
       <div className="details">
         <h2>
-          John Smith
+          Natasha Smith
           <br />
           <span className="job-title">UI Developer</span>
         </h2>

@@ -3,6 +3,7 @@ import './service.css';
 import { Link } from "react-router-dom";
 import { FaGlobeAmericas, FaUserTie, FaCheckCircle, FaSmile } from "react-icons/fa"
 import AnimatedCounter from "../../composant/animatecounter/numbercount";
+import Carousel from "../../composant/Carousel/carousel";
 
 export default function Services() {
   return (
@@ -53,6 +54,33 @@ export default function Services() {
 </div>
 
       </section>
+      
+      <section className="stats-section">
+        <div className="stat-item">
+          <img src="client.png" className="stat-img" />
+          <p><AnimatedCounter to={120} duration={2200} /><span>+</span></p>
+          <p>Clients Worldwide</p>
+        </div>
+        <div className="stat-item">
+         <img src="customer.png" className="stat-img" />
+          <p><AnimatedCounter to={60} duration={2500} /><span>+</span></p>
+          <p>Experience Engineers</p>
+        </div>
+        <div className="stat-item">
+         <img src="verification.png" className="stat-img" />
+          <p><AnimatedCounter to={70} duration={2500} /><span>+</span></p>
+          <p>Completed Projects</p>
+        </div>
+        <div className="stat-item">
+          <img src="reputation.png" className="stat-img" />
+          <p><AnimatedCounter to={120} duration={2000} /><span>%</span></p>
+          <p>Satisfaction Customers</p>
+        </div>
+      </section>
+      <section>
+        <Carousel/>
+      </section>
+      
     </div>
     </>
   );

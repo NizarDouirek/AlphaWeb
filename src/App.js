@@ -13,6 +13,7 @@ import Carousel from './composant/Carousel/carousel';
 
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Team from './pages/Team/team';
+import ScrollToTop from './composant/ScrollToTop/scroll';
 <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -44,6 +45,7 @@ function AppContent() {
       {loading && <Loader />}
       {!loading && (
         <>
+        <ScrollToTop/>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
