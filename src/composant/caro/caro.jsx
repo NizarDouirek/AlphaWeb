@@ -14,18 +14,22 @@ const techLogos = [
 ];
 
 export default function TechCarousel() {
-  // On double le tableau pour un effet infini
   const repeatedItems = [...techLogos, ...techLogos];
 
   return (
-    <div className="carousel-container">
-      <div className="carousel-track">
-        {repeatedItems.map((logo, index) => (
-          <div className="carousel-item" key={index}>
-            <img src={logo.src} alt={logo.alt} className="tech-logo" />
-            <span className="tech-name">{logo.alt}</span>
-          </div>
-        ))}
+    <div className="carousel-wrapper">
+      
+      <div className="carousel-container">
+        <div className="carousel-track">
+          {repeatedItems.map((logo, index) => (
+            <div className="carousel-item" key={index}>
+              <div className="tech-card">
+                <img src={logo.src} alt={logo.alt} className="tech-logo" />
+                <span className="tech-name">{logo.alt}</span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

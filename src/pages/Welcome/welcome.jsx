@@ -11,8 +11,7 @@ export default function Welcome(){
               <p className="pp"> Bienvenue dans notre site</p>
               <p className="ItS">IT Solutions.</p>
               <p className="main-p">
-                You can easily change any design to your own. It is also highly <br />
-                customizable SEO friendly template.
+              Chez AlphaWeb, nous donnons vie à vos idées digitales.
               </p>
     
               <div className="main-social-media">
@@ -23,8 +22,8 @@ export default function Welcome(){
               </div>
     
               <div className="btn-main2">
-                <button className="btn-quotes2">Get Quotes</button>
-                <button className="btn-started">Get Started</button>
+                <button className="btn-quotes2">Nos services</button>
+                <button className="btn-started">Nous contacter</button>
               </div>
             </div>
           </div>

@@ -1,18 +1,56 @@
-.carousel-wrapper {
-  max-width: 1280px;
+/* ✅ Section avec fond dégradé */
+.testimonials-section {
+  background: linear-gradient(135deg, #f9fbff, #eef2f7);
+  padding: 10px 20px 60px;  /* ✅ réduit le bas */
+  text-align: center;
+  border-radius: 20px;
   margin: 40px auto;
-  padding: 20px 20px 20px;
+  max-width: 1400px;
+  
+}
+
+
+
+/* ✅ Titre principal */
+.carousel-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #0a0a23;
+}
+
+/* ✅ Sous-titre */
+.carousel-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+/* ✅ Carousel container2 */
+.carousel-container2 {
+ 
+  margin: 0 auto;
+    width: 100%;
+  height: 370px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #4e2abe, #d93685);
+  padding: 45px 0;
+  border-radius: 30px; /* arrondi pill */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   position: relative;
   
 }
 
+
+/* ✅ Espacement entre les slides */
 .slick-slide {
   padding: 0 12px;
   box-sizing: border-box;
 }
 
+/* ✅ Carte avis */
 .review-card {
-  width: 100%;
   background: #ffffff;
   border-radius: 16px;
   padding: 24px;
@@ -30,7 +68,7 @@
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
 }
 
-/* Haut de la carte */
+/* ✅ Header */
 .review-header {
   display: flex;
   align-items: center;
@@ -38,21 +76,23 @@
 }
 
 .avatar {
-   width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 100px;
   object-fit: cover;
   border-radius: 50%;
-  margin-right: 16px;
+  margin-right: 20px;
+  border: 2px solid #bbc1c7; /* cercle coloré autour */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* effet relief */
   transition: transform 0.3s ease;
 }
 .review-card:hover .avatar {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
+
 
 .review-info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
 }
 
@@ -74,6 +114,7 @@
   font-size: 1rem;
 }
 
+/* ✅ Texte */
 .text {
   font-size: 0.95rem;
   color: #444;
@@ -82,68 +123,42 @@
   text-align: left;
 }
 
-/* Flèches de navigation */
-.carousel-wrapper .slick-prev,
-.carousel-wrapper .slick-next {
-  z-index: 3;
-  width: 42px;
-  height: 42px;
-  background: #007bff;
-  color: white;
-  border-radius: 50%;
+/* ✅ Dots (indicateurs) */
+.carousel-container2 .slick-dots {
+  position: static;
+  margin-top: 30px; /* plus d’espace avec les cartes */
+  margin-bottom: 0;
   display: flex !important;
   justify-content: center;
   align-items: center;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-.carousel-wrapper .slick-prev {
-  left: -25px;
-}
-.carousel-wrapper .slick-next {
-  right: -25px;
-}
-.carousel-wrapper .slick-prev:hover,
-.carousel-wrapper .slick-next:hover {
-  background: #0056b3;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Dots */
-/* Dots */
-.carousel-wrapper .slick-dots {
-  position: absolute;
-  bottom: -30px; /* distance par rapport au bas des reviews */
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.carousel-wrapper .slick-dots li {
+.carousel-container2 .slick-dots li {
   margin: 0 6px;
 }
 
-.carousel-wrapper .slick-dots li button {
+.carousel-container2 .slick-dots li button {
   width: 10px;
   height: 10px;
   padding: 0;
 }
 
-.carousel-wrapper .slick-dots li button:before {
+.carousel-container2 .slick-dots li button:before {
   font-size: 10px;
   color: #bbb;
   opacity: 1;
   transition: all 0.3s ease;
 }
 
-.carousel-wrapper .slick-dots li.slick-active button:before {
+.carousel-container2 .slick-dots li.slick-active button:before {
   color: #007bff;
   font-size: 12px;
 }
 
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .review-card {
+    min-height: auto;
+    padding: 20px;
+  }
+}

@@ -1,61 +1,87 @@
+.carousel-wrapper {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.carousel-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #1a1a1a;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 .carousel-container {
   width: 100%;
-  margin-top: 40px;
+  max-width: 1100px; /* largeur max */
+  margin: 0 auto;
   overflow: hidden;
-  background: linear-gradient(to right, #4e2abe, #d93685);
-  padding: 15px 0;
+  background: linear-gradient(90deg, #4e2abe, #d93685);
+  padding: 25px 0;
+  border-radius: 30px; /* arrondi pill */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   position: relative;
+}
+
+.carousel-track {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
 }
 
 .carousel-container:hover .carousel-track {
   animation-play-state: paused;
 }
 
-.carousel-track {
-  display: inline-block;
-  animation: scroll 25s linear infinite;
-  white-space: nowrap;
-}
-
 .carousel-item {
   display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 40px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  margin: 0 25px;
 }
 
-.carousel-item:hover {
-  transform: scale(1.1);
+.tech-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 18px;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  cursor: pointer;
+}
+
+.tech-card:hover {
+  transform: translateY(-6px) scale(1.08);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2),
+              0 0 12px rgba(255, 255, 255, 0.4);
 }
 
 .tech-logo {
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   object-fit: contain;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  margin-bottom: 8px;
+  transition: transform 0.3s ease;
+  /*filter: grayscale(100%) brightness(1.2);*/
 }
 
-.tech-logo:hover {
-  transform: scale(1.2) rotate(5deg);
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
+.tech-card:hover .tech-logo {
+  transform: scale(1.15) rotate(4deg);
+/*  filter:grayscale(0%) brightness(1);*/
 }
 
 .tech-name {
-  margin-top: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  letter-spacing: 0.3px;
 }
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
 }
