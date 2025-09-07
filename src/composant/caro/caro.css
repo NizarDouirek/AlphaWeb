@@ -85,3 +85,41 @@
   0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
 }
+/* Responsive pour téléphone */
+@media (max-width: 576px) {
+  .carousel-wrapper {
+    margin: 40px auto;
+    padding: 0 10px;
+  }
+
+  .carousel-title {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+  }
+
+  .carousel-container {
+    padding: 15px 0;
+    border-radius: 20px;
+  }
+
+  .carousel-item {
+    margin: 0 12px; /* réduire l’espacement */
+  }
+
+  .tech-card {
+    min-width: 90px;
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .tech-logo {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 6px;
+  }
+
+  .tech-name {
+    font-size: 12px;
+    letter-spacing: 0.2px;
+  }
+}

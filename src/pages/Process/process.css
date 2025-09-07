@@ -140,7 +140,7 @@
   .circle-container {
     width: 100%;
     height: auto;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 20px;
