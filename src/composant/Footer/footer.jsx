@@ -37,6 +37,10 @@ export default function Footer() {
         <div className="footer-container">
           {/* Colonne 1 */}
           <div className="footer-brand">
+            <div className="logo">
+        <img className="imgLogo" src="logo.svg" alt="" />
+ <a >AlphaWeb</a>
+      </div>
             <div className="footer-img"></div>
             <p>
               We are many variations of passages available but the majority have suffered alteration in some form by injected humour words believable.
@@ -52,12 +56,12 @@ export default function Footer() {
           <div className="footer-column">
             <h2>Quick Links</h2>
             <ul>
-              <li><span>&gt;</span><a href="#">About Us</a></li>
-              <li><span>&gt;</span><a href="#">FAQ's</a></li>
-              <li><span>&gt;</span><a href="#">Terms Of Service</a></li>
-              <li><span>&gt;</span><a href="#">Privacy Policy</a></li>
-              <li><span>&gt;</span><a href="#">Our Team</a></li>
-              <li><span>&gt;</span><a href="#">Latest Blog</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">Terms Of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Latest Blog</a></li>
             </ul>
           </div>
 
@@ -65,12 +69,12 @@ export default function Footer() {
           <div className="footer-column">
             <h2>Our Services</h2>
             <ul>
-              <li><span>&gt;</span><a href="#">Web Design</a></li>
-              <li><span>&gt;</span><a href="#">Digital Marketing</a></li>
-              <li><span>&gt;</span><a href="#">IT Management</a></li>
-              <li><span>&gt;</span><a href="#">Cloud Services</a></li>
-              <li><span>&gt;</span><a href="#">Machine Learning</a></li>
-              <li><span>&gt;</span><a href="#">Cyber Security</a></li>
+              <li><a href="#">Web Design</a></li>
+              <li><a href="#">Digital Marketing</a></li>
+              <li><a href="#">IT Management</a></li>
+              <li><a href="#">Cloud Services</a></li>
+              <li><a href="#">Machine Learning</a></li>
+              <li><a href="#">Cyber Security</a></li>
             </ul>
           </div>
         </div>
