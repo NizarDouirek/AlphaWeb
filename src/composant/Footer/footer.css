@@ -23,7 +23,7 @@
 }
 
 .footer-brand .footer-img {
-  background-image: url('/public/logo.png');
+  
   background-repeat: no-repeat;
   background-size: contain;
   width: 150px;
@@ -31,6 +31,7 @@
 }
 
 .footer-brand p {
+  margin-top: -60px;
   font-size: 0.95rem;
   width: 300px;
   line-height: 1.5;
@@ -51,15 +52,12 @@
 }
 
 .footer-contact li i {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: #fff;
-  color: #0059E8;
-  text-align: center;
-  line-height: 28px;
-  font-size: 1rem;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #00aaff;  /* même couleur que tes liens */
+  background: none; /* supprime le cercle blanc */
 }
+
 
 .footer-column {
   flex: 1 2 180px;
@@ -83,6 +81,19 @@
   gap: 5px;
 }
 
+/* Flèches modernes devant les liens */
+.footer-column ul li::before {
+  content: "→";  /* flèche moderne */
+  margin-right: 8px;
+  color: #00aaff;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.footer-column ul li:hover::before {
+  transform: translateX(4px); /* petit effet au hover */
+}
+
 .footer-column ul li span {
   color: #00aaff;
 }
@@ -100,44 +111,43 @@
 /* Bas du footer */
 .footer-bottom {
   margin-top: 20px;
-  padding-top: 10px;
-  text-align: center;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between; /* texte à gauche, icônes à droite */
+  align-items: center;
   font-size: 0.85rem;
   color: #ccc;
-  position: relative;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-bottom-icons {
-  position: absolute;
-  right: 10px;
-  top: 29%;
-  transform: translateY(-50%);
   display: flex;
-  gap: 8px;
+  gap: 10px;
+  position: static; /* supprime absolute */
 }
+
 
 .footer-bottom-icons ul {
   list-style: none;
 }
 
 @media (max-width: 768px) {
-  .footer-newsletter-line {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .footer-container {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  .footer-bottom-icons {
-    position: static;
-    margin-top: 10px;
-    justify-content: center;
+  .footer-contact {
+    align-items: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
   }
 }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 

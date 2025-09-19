@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import './icons.css';
+
 const Tooltip = () => {
   return (
     <StyledWrapper>
