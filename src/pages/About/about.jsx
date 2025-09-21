@@ -117,7 +117,7 @@ Enthusiastically maximize secure, cost-effective solutions tailored to your goal
 That Increase Your Success.</h5>
   </div>
   <div className="mission-button">
-    <Link to="/AboutDetails" className="about-btn">Contact us</Link>
+    <Link to="/Contact" className="about-btn">Contact us</Link>
   </div>
   </div>
   <img src="support.jpg" alt="" />
@@ -135,7 +135,7 @@ To Develope Your Business</h2>
     <div className="cardTeam">
       <div className="cardTeam-image">
         <img
-          src="pro41.jpeg"
+          src="wii.png"
           alt="profile one"
         />
       </div>
@@ -178,7 +178,7 @@ To Develope Your Business</h2>
     <div className="cardTeam profile-two">
       <div className="cardTeam-image profile-img--two">
         <img
-          src="bel-homme-souriant-a-la-recherche-d-incredulite.jpg"
+          src="soufian.png"
           alt="profile two"
         />
       </div>
@@ -210,7 +210,7 @@ To Develope Your Business</h2>
         <h2>
           Soufiane Chellat
           <br />
-          <span className="job-title">Frontend Developer</span>
+          <span className="job-title">Web Developer</span>
         </h2>
       </div>
     </div>

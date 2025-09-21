@@ -183,7 +183,7 @@ export default function Home() {
   
 </div>
 
-    <section className="contact-cta">
+    {/* <section className="contact-cta">
       <img src="cont3.webp" alt="ring" className="cta-ring" />
       <div className="cta-content">
         <h2>Need any project ? we're here</h2>
@@ -196,9 +196,9 @@ export default function Home() {
       </div>
       <img src="cont1.webp" alt="rocket" className="cta-rocket" />
       <img src="cont2.webp" alt="paper plane" className="cta-plane" />
-    </section>
+    </section> */}
 <section className="home-carousel-section" >
-  <h1 className="home-pack-h1">TESTIMONIALS</h1>
+  
    <Carousel />
 </section>
 

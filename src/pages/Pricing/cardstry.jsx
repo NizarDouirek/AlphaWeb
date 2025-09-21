@@ -1,5 +1,6 @@
 import React from "react";
 import "./PricingSection.css";
+import { Link } from "react-router-dom";
 
 const plans = [
   {
@@ -70,8 +71,10 @@ const PricingSection = () => {
               </li>
             ))}
           </ul>
+          
           <button className="choose-btn">
-            <span className="circle-plus">+</span> Choose Plan
+            <Link to='/table'>
+            <span className="circle-plus">+</span> Choose Plan</Link>
           </button>
         </div>
       ))}

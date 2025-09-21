@@ -8,7 +8,7 @@ const reviews = [
   {
     name: "Keena Lara",
     role: "Store Owner",
-    text: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accumsan quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam.",
+    text: "Proin iaculis purus consequat sem cure digni aliquam eget nibh et. Maecen aliquam.",
     img: "/portrait-d-une-jeune-femme-d-affaires-tenant-des-lunettes-a-la-main-sur-fond-gris.jpg",
     rating: 5,
   },
@@ -16,14 +16,14 @@ const reviews = [
     name: "Fizzi Brandon",
     role: "Freelancer",
     text: "Accumsan quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam.",
-    img: "/Generated Image September 02, 2025 - 9_58PM.jpeg",
+    img: "cmt.jpg",
     rating: 5,
   },
   {
     name: "Jhone Doe",
     role: "CFO",
     text: "Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.",
-    img: "/Generated Image September 02, 2025 - 10_00PM.jpeg",
+    img: "www.jpg",
     rating: 5,
   },
   {
@@ -65,9 +65,9 @@ export default function ReviewCarousel() {
 
   return (
     <section className="testimonials-section">
-      <h2 className="carousel-title">What our clients say about us</h2>
+      <h2 className="carousel-title">Testimonials</h2>
       <p className="carousel-subtitle">
-        Real feedback from our trusted partners and clients
+        What our clients say about us
       </p>
       <div className="carousel-container2">
         <Slider {...settings}>

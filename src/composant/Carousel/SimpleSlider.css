@@ -1,164 +1,134 @@
-/* ✅ Section avec fond dégradé */
+/* Section */
 .testimonials-section {
-  background: linear-gradient(135deg, #f9fbff, #eef2f7);
-  padding: 10px 20px 60px;  /* ✅ réduit le bas */
+  padding: 60px 20px;
+  background-color: #f8faff; /* fond très clair bleu */
   text-align: center;
-  border-radius: 20px;
-  margin: 40px auto;
-  max-width: 1400px;
-  
+  font-family: 'Poppins', sans-serif;
 }
 
-
-
-/* ✅ Titre principal */
 .carousel-title {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 10px;
-  color: #0a0a23;
+  color: #539fe7; /* bleu foncé */
+  margin-bottom: 20px;
 }
 
-/* ✅ Sous-titre */
 .carousel-subtitle {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 40px;
-  font-style: italic;
+  font-size: 2rem;
+  color: #0d3b66;
+  margin-bottom: 50px;
 }
 
-/* ✅ Carousel container2 */
+/* Container carousel */
 .carousel-container2 {
- 
+  /* max-width: 1200px; */
   margin: 0 auto;
-    width: 100%;
-  height: 370px;
-  overflow: hidden;
-  background: linear-gradient(90deg, #4e2abe, #d93685);
-  padding: 45px 0;
-  border-radius: 30px; /* arrondi pill */
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  position: relative;
-  
 }
 
-
-/* ✅ Espacement entre les slides */
-.slick-slide {
-  padding: 0 12px;
-  box-sizing: border-box;
-}
-
-/* ✅ Carte avis */
+/* Carte */
 .review-card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  min-height: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: grab;
+   /* subtil gradient blanc-bleu */
+  border-radius: 25px;
+  padding: 30px 20px;
+  margin: 15px;
+  box-shadow: 0 15px 35px rgba(0, 66, 255, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  max-width: 400px;
 }
 
 .review-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
+  transform: translateY(-15px);
+  border: 1px solid rgb(232, 230, 230);
 }
 
-/* ✅ Header */
+/* Avatar */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #074481;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover .avatar {
+  transform: scale(1.1);
+}
+
+/* Header */
 .review-header {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
-.avatar {
-  width: 90px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-right: 20px;
-  border: 2px solid #bbc1c7; /* cercle coloré autour */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* effet relief */
-  transition: transform 0.3s ease;
-}
-.review-card:hover .avatar {
-  transform: scale(1.08);
-}
-
-
-.review-info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.name {
-  color: #007bff;
-  font-size: 1.1rem;
+.review-info .name {
+  font-size: 1.2rem;
   font-weight: 600;
   margin: 0;
+  color: #0d3b66;
 }
 
-.role {
+.review-info .role {
   font-size: 0.9rem;
-  color: #666;
-  margin: 2px 0 6px;
+  color: #1a436b;
+  margin: 3px 0 5px 0;
 }
 
+/* Étoiles avec dégradé bleu */
 .stars {
-  color: #ffb400;
   font-size: 1rem;
+  background: linear-gradient(90deg, #3399ff, #66ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* ✅ Texte */
-.text {
-  font-size: 0.95rem;
-  color: #444;
-  font-style: italic;
-  line-height: 1.6;
-  text-align: left;
+/* Texte de l'avis */
+
+
+/* Points du carousel */
+.slick-dots {
+  margin-top: 30px;
 }
 
-/* ✅ Dots (indicateurs) */
-.carousel-container2 .slick-dots {
-  position: static;
-  margin-top: 30px; /* plus d’espace avec les cartes */
-  margin-bottom: 0;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-container2 .slick-dots li {
-  margin: 0 6px;
-}
-
-.carousel-container2 .slick-dots li button {
-  width: 10px;
-  height: 10px;
-  padding: 0;
-}
-
-.carousel-container2 .slick-dots li button:before {
-  font-size: 10px;
-  color: #bbb;
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-
-.carousel-container2 .slick-dots li.slick-active button:before {
-  color: #007bff;
+.slick-dots li button:before {
   font-size: 12px;
+  color: #7eaaeb;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* ✅ Responsive */
+.slick-dots li.slick-active button:before {
+  color: #07498b;
+  transform: scale(1.3);
+}
+
+/* Animation d'apparition */
+.review-card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlide 0.8s forwards;
+}
+
+@keyframes fadeSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .review-card {
+    padding: 25px 15px;
+  }
+}
+
 @media (max-width: 768px) {
   .review-card {
-    min-height: auto;
-    padding: 20px;
+    margin: 0 10px;
   }
 }

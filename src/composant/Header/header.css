@@ -86,7 +86,7 @@
 /* ============================= */
 .btn-quotes {
   padding: 10px 20px;
-  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  background: linear-gradient(90deg, #007cf0, #2500df);
   color: white;
   border-radius: 25px;
   border: none;
@@ -98,6 +98,7 @@
 
 .btn-quotes:hover {
   transform: translateY(-3px);
+   background: linear-gradient(90deg, #007cf0, #0264c1);
   box-shadow: 0 6px 15px rgba(0, 124, 240, 0.3);
 }
 

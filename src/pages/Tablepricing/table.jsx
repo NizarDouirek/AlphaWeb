@@ -3,9 +3,42 @@ import './table.css';
 import Header from '../../composant/Header/header';
 import CircularText from "../../composant/RotateNmae/rotatename";
 import styled from 'styled-components';
+import { useNavigate } from "react-router-dom";
 
 const PricingTable = () => {
-  
+  const navigate = useNavigate();
+
+  const handleSelect = (plan) => {
+    navigate("/OffrePage", { state: plan });
+  };
+
+  const plans = [
+    { name: "STANDARD", price: "2599 DH", badge: "Populaire" ,
+    support: "Free 3 Months Solutions Support",
+    features: [
+      { label: "Custom Website Design", included: true },
+      { label: "Priority Bug Fixes & Updates", included: true },
+      { label: "Basic & Technical SEO", included: true },
+      { label: "System Integration Support", included: false },
+      { label: "24/7 Dedicated IT Assistance", included: false },
+    ],},
+    { name: "PRO", price: "2999 DH", badge: "Recommandé",support: "Free 6 Months Solutions Support",
+    features: [
+      { label: "Custom Website Design", included: true },
+      { label: "Priority Bug Fixes & Updates", included: true },
+      { label: "Basic & Technical SEO", included: true },
+      { label: "System Integration Support", included: true },
+      { label: "24/7 Dedicated IT Assistance", included: false },
+    ], },
+    { name: "PREMIUM", price: "5990 DH", badge: null,support: "Free 12 Months Solutions Support",
+    features: [
+      { label: "Custom Website Design", included: true },
+      { label: "Priority Bug Fixes & Updates", included: true },
+      { label: "Basic & Technical SEO", included: true },
+      { label: "System Integration Support", included: true },
+      { label: "24/7 Dedicated IT Assistance", included: true },
+    ], },
+  ];
 
   return (
     <>
@@ -18,44 +51,31 @@ const PricingTable = () => {
       </div>
 
       <div className="pricing-container">
+         <h1>Choisissez l’Offre qui Fait Décoller Votre Business </h1>
         <table className="pricing-table">
           <thead>
             <tr>
               <th style={{ width: '200px', height: '200px', padding: 0 }}> 
           
               </th>
-              
-              <th className="th1">
-                <div className="plan-title title1">
-                  <h2>STANDARD</h2>
-                  <div className="price-badge">Populaire</div>
+               {plans.map((plan, index) => (
+              <th key={index} className={`th${index + 1}`}>
+                <div className="plan-title">
+                  <h2>{plan.name}</h2>
+                  {plan.badge && <div className="price-badge">{plan.badge}</div>}
                 </div>
-                <div className="plan-price">
-                  <p>2599 DH<br /><span>par mois</span></p>
+                <div className="plan-price2">
+                  <p>
+                    {plan.price} <br /> <span>par mois</span>
+                  </p>
                 </div>
-              </th>
-
-              <th className="th2">
-                <div className="plan-title title2">
-                  <h2>PRO</h2>
-                </div>
-                <div className="plan-price">
-                  <p>2999 DH<br /><span>par mois</span></p>
+                <div>
+                  <button onClick={() => handleSelect(plan)}>
+                    Sélectionner
+                  </button>
                 </div>
               </th>
-              
-              <th className="th3">
-                  <div className="plan-title title2">
-                  <h2>Premium</h2>
-                </div>
-                <div className="plan-price">
-                    <p>5990 DH<br /><span>par mois</span></p>
-                </div>
-                  
-                  
-                  
-                
-              </th>
+            ))}
             </tr>
           </thead>
           
@@ -88,17 +108,17 @@ const PricingTable = () => {
             <tr>
               <td></td>
               <td>
-                <button className="btn standard-btn">
+                <button className="btnplan standard-btn">
                   Commencer <span className="btn-effect"></span>
                 </button>
               </td>
               <td>
-                <button className="btn pro-btn">
+                <button className="btnplan pro-btn">
                   Commencer <span className="btn-effect"></span>
                 </button>
               </td>
               <td>
-                <button className="btn premium-btn">
+                <button className="btnplan premium-btn">
                   Commencer <span className="btn-effect"></span>
                 </button>
               </td>

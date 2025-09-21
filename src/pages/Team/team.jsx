@@ -3,7 +3,7 @@ import "./team.css";
 import { Link } from "react-router-dom";
 
 const teamMembers = [
-  { name: "Nizar Douirek", role: "Founder & CEO", imageUrl: "pro41.jpeg" },
+  { name: "Nizar Douirek", role: "Founder & CEO", imageUrl: "wi.webp" },
   { name: "Sofian Chellat", role: "CEO", imageUrl: "dv_lottery.jpg" },
   { name: "Harshita Patel", role: "HR", imageUrl: "https://i.pinimg.com/736x/6f/a3/6a/6fa36aa2c367da06b2a4c8ae1cf9ee02.jpg" },
   { name: "Eleanor Morales", role: "HR", imageUrl: "https://i.pinimg.com/1200x/c2/4e/27/c24e271f2f992fd7e62e8c1e8d9b3e2f.jpg" },

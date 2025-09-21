@@ -892,3 +892,94 @@ margin-top: 200px;
     font-size: 11px;
   }
 }
+
+/* ------------------- Media Queries FAQ ------------------- */
+
+/* Tablettes (1024px et moins) */
+@media (max-width: 1024px) {
+  .faq-container {
+    max-width: 90%;
+    padding: 30px;
+    margin-top: 150px;
+  }
+
+  .faq-caption {
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+
+  .faq-item {
+    padding: 16px 20px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+
+  .faq-answer {
+    font-size: 14px;
+  }
+
+  .faq-icon {
+    font-size: 16px;
+  }
+}
+
+/* Mobiles (768px et moins) */
+@media (max-width: 768px) {
+  .faq-container {
+    max-width: 95%;
+    padding: 25px;
+    margin-top: 120px;
+  }
+
+  .faq-caption {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .faq-item {
+    padding: 14px 18px;
+  }
+
+  .faq-question {
+    font-size: 15px;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+  }
+
+  .faq-icon {
+    font-size: 15px;
+  }
+}
+
+/* Très petits écrans (480px et moins) */
+@media (max-width: 480px) {
+  .faq-container {
+    padding: 20px;
+    margin-top: 100px;
+  }
+
+  .faq-caption {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .faq-item {
+    padding: 12px 15px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+  }
+
+  .faq-answer {
+    font-size: 12px;
+  }
+
+  .faq-icon {
+    font-size: 14px;
+  }
+}

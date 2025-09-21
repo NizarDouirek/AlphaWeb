@@ -15,7 +15,7 @@
 
 .carousel-container {
   width: 100%;
-  max-width: 1100px; /* largeur max */
+  max-width: 2000px; 
   margin: 0 auto;
   overflow: hidden;
   background: linear-gradient(90deg, #4e2abe, #d93685);

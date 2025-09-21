@@ -14,6 +14,7 @@ import Carousel from './composant/Carousel/carousel';
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Team from './pages/Team/team';
 import ScrollToTop from './composant/ScrollToTop/scroll';
+import OffrePage from './pages/Tablepricing/offrePage';
 <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -53,6 +54,7 @@ function AppContent() {
             <Route path="/Contact" element={<Contact />} />
             <Route path="/About" element={<About />} />
             <Route path="/Services" element={<Services />} />
+            <Route path="/OffrePage" element={<OffrePage />} />
             <Route path="/Team" element={<Team />} />
             <Route path="/table" element={<PricingTable />} />
           </Routes>

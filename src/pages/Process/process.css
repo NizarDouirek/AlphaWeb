@@ -1,163 +1,317 @@
-.contentProcessCircle {
-  text-align: center;
+.process-container {
+  background: linear-gradient(135deg, #0c2078 0%, #764ba2 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
   padding: 60px 20px;
 }
 
-.process-title {
-  font-size: 2.5rem;
-   color: #080552;
-   margin-top: 1.5rem;
-}
-
-.circle-container {
-  position: relative;
-  width: 800px;
-  height: 800px;
-  margin: 0 auto;
-}
-
-.central-image {
+.process-container::before {
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 520px;
-  height: 520px;
+  inset: 0;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><pattern id='grid' width='10' height='10' patternUnits='userSpaceOnUse'><path d='M 10 0 L 0 0 0 10' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='0.5'/></pattern></defs><rect width='100' height='100' fill='url(%23grid)'/></svg>");
+  opacity: 0.3;
+}
+
+.wrapperProcess {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* En-tête */
+.headerProcess h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.headerProcess p {
+  font-size: 1.2rem;
+  color: rgb(211, 237, 255);
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Conteneur des steps */
+.wrapperProcess {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Grille des étapes */
+.steps-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+   grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin-top: 40px;
+}
+
+/* Step cards */
+.step-card {
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.703);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+/* Quand on survole le conteneur, toutes les cartes deviennent transparentes */
+.steps-grid:hover .step-card {
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+/* La carte active garde son opacité et son effet */
+.steps-grid .step-card:hover {
+  opacity: 1;
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+
+/* .step-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.6s;
+}
+.step-card:hover::before {
+  left: 100%;
+} */
+
+/* Numéros */
+.step-number {
+  background: linear-gradient(135deg, #540763, #ff05d1);
+  color: white;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  /* background-color: #f9f9f9; */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
-  pointer-events: none;
-  user-select: none;
-}
-
-.central-image img {
-  width: 450px;
-  height: auto;
-}
-
-.step-circle {
   position: absolute;
-  width: 250px;
-  background: #ffffff;
-  padding: 20px 15px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  z-index: 0;
-  
-    overflow: hidden;
-  
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: -16px;
-      right: -16px;
-      /* background: #054044; */
-      background-image: linear-gradient(25deg, #caeff6, #0f4e7f,#065983, #087d8a);
-      height: 52px;
-      width: 60px;
-      border-radius: 32px;
-      transform: scale(1);
-      transform-origin: 50% 50%;
-      transition: transform 0.5s ease-out;
-    }
-  
-    &:hover:before {
-      transform: scale(21);
-    }
-  
+  top: -10px;
+  right: -10px;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.4);
 }
- .step-circle:hover {
-    .text p{
-      transition: all 0.3s ease-out;
-      color: rgb(233, 228, 228);
-    }
-    .icon{
-      color: #01ffea;
-    }
-    .text h3{
-      transition: all 0.3s ease-out;
-      color: #ffffff;
-    }
 
-  }
-
-.step-circle .icon {
+/* Icônes */
+.step-icon {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
   font-size: 2rem;
-  color: #007bff;
-  margin-bottom: 8px;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.step-card:hover .step-icon {
+  transform: rotate(360deg) scale(1.1);
+  background: linear-gradient(135deg, #764ba2, #667eea);
 }
 
-.step-circle .text h3 {
-  font-size: 1.2rem;
-  color: #222;
-  margin-bottom: 10px;
-  font-weight: 600;
+/* CTA */
+.cta {
+  margin-top: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.step-circle .text p {
+.cta h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+.cta p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 20px;
+}
+.cta button {
+  background: linear-gradient(to right, #540763, #ee247f);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 12px;
   font-size: 1rem;
-  color: #555;
-  /* line-height: 1.4; */
-  margin: 0;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cta button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #40064c, #ce216f);
 }
 
-/* Positionnement circulaire amélioré */
-.top-left {
-  top: 4%;
-  left: -12%;
-}
-.mid-left {
-  top: 42%;
-  left: -20%;
-}
-.bottom-left {
-  bottom: -4%;
-  left: 7%;
+/* ------------------- Media Queries ------------------- */
+
+/* Tablettes (1024px et moins) */
+@media (max-width: 1024px) {
+  .process-container {
+    padding: 50px 15px;
+  }
+
+  .headerProcess h1 {
+    font-size: 30px;
+  }
+
+  .headerProcess p {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .step-card {
+    padding: 25px;
+  }
+
+  .step-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+  }
+
+  .step-number {
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+  }
 }
 
-.top-right {
-  top: 4%;
-  right: -12%;
-}
-.mid-right {
-  top: 42%;
-  right: -20%;
-}
-.bottom-right {
-  bottom: -4%;
-  right: 7%;
-}
-
-/* Responsive */
+/* Petits écrans / mobiles (768px et moins) */
 @media (max-width: 768px) {
-  .circle-container {
-    width: 100%;
-    height: auto;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  .process-container {
+    padding: 40px 10px;
   }
 
-  .step-circle,
-  .central-image {
-    position: static;
-    transform: none;
+  .headerProcess h1 {
+    font-size: 26px;
   }
 
-  .central-image {
-    margin: 30px 0;
+  .headerProcess p {
+    font-size: 1rem;
   }
 
-  .step-circle {
-    width: 90%;
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .step-card {
     padding: 20px;
+  }
+
+  .step-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+  }
+
+  .step-number {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .cta {
+    padding: 30px;
+    max-width: 90%;
+  }
+
+  .cta h3 {
+    font-size: 1.7rem;
+  }
+
+  .cta p {
+    font-size: 0.95rem;
+  }
+
+  .cta button {
+    padding: 12px 25px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Très petits écrans / mobiles étroits (480px et moins) */
+@media (max-width: 480px) {
+  .headerProcess h1 {
+    font-size: 22px;
+  }
+
+  .headerProcess p {
+    font-size: 0.95rem;
+  }
+
+  .step-card {
+    padding: 15px;
+  }
+
+  .step-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+
+  .step-number {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+  }
+
+  .cta {
+    padding: 25px;
+  }
+
+  .cta h3 {
+    font-size: 1.5rem;
+  }
+
+  .cta p {
+    font-size: 0.9rem;
+  }
+
+  .cta button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }

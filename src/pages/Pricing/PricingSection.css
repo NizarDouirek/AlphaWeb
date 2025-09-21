@@ -178,6 +178,10 @@
   transform: scale(1.05);
 }
 
+.choose-btn a{
+  color: white;
+  text-decoration: none;
+}
 .circle-plus {
   background: none;
   color: #fff;
