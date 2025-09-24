@@ -15,6 +15,7 @@ import CircularGallery from "../../composant/Carousel/carousel";
 import Card from "../../composant/Carousel/slide";
 import SimpleSlider from '../../composant/Carousel/slide';
 import Caro from "../../composant/caro/caro";
+import Portfolio from "../../composant/Portfolio/portfolio";
 // import ModelViewer from '../../composant/Model/ModelViewer';
 const logos = [
   "./mysql.png",
@@ -61,7 +62,11 @@ export default function Home() {
   {
     question: "How can I contact your support team?",
     answer: "You can reach us via email, phone, live chat, or by submitting a ticket through our support portal."
-  }
+  },
+  {
+    question: "Can I request custom software or features?",
+    answer: "Absolutely. We offer bespoke software development tailored to your business needs."
+  },
 ];
 
   const repeatedItems = Array(7).fill(items).flat(); // répète 3 fois
@@ -96,50 +101,65 @@ export default function Home() {
       <div className="services-page">
       
         
-      <section className="services-hero">
-        <h1>Nos Services</h1>
-        <p>
-          Nous fournissons des solutions technologiques de haute qualité pour faire évoluer votre entreprise.
-        </p>
-      </section>
+     
 {/* <ModelViewer
   url="https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/main/2.0/ToyCar/glTF-Binary/ToyCar.glb"
   width={400}
   height={400}
 /> */}
-      <section className="services-list">
-        <div className="service-card">
-          <i className="bx bx-code-alt service-icon"></i>
-          <h3>Développement Web</h3>
-          <p>Sites modernes et performants, adaptés à tous les appareils.</p>
-        </div>
-        <div className="service-card">
-          <i className="bx bx-mobile-alt service-icon"></i>
-          <h3>Applications Mobiles</h3>
-          <p>Applications iOS et Android, intuitives et performantes.</p>
-        </div>
-        <div className="service-card">
-          <i className="bx bx-paint service-icon"></i>
-          <h3>Design UI/UX</h3>
-          <p>Interfaces attrayantes et orientées utilisateur.</p>
-        </div>
-        <div className="service-card">
-          <i className="bx bx-support service-icon"></i>
-          <h3>Consulting IT</h3>
-          <p>Conseils personnalisés pour votre transformation digitale.</p>
-        </div>
-        <div className="service-card">
-  <i className="bx bx-cloud-upload service-icon"></i>
-  <h3>DevOps & CI/CD</h3>
-  <p>Automatisation des déploiements, intégration continue et amélioration du cycle de développement logiciel.</p>
-</div>
-<div className="service-card">
-  <i className="bx bx-shield-quarter service-icon"></i>
-  <h3>Cybersécurité</h3>
-  <p>Protection de vos données et systèmes contre les cybermenaces avec des solutions de sécurité avancées.</p>
-</div>
-
+ 
+   <section class="services-circle">
+    <section className="services-hero">
+        <h1>Nos Services</h1>
+        <p>
+          Nous fournissons des solutions technologiques de haute qualité pour faire évoluer votre entreprise.
+        </p>
       </section>
+    <div class="services-wrapper">
+        
+        <div class="services-center">
+            <img src="ob1.jpg" alt="IT Solutions"/>
+        </div>
+
+       
+        <div class="service-item top-left">
+            <i class="bx bx-code-alt"></i>
+            <h3>Développement Web</h3>
+            <p>Sites modernes et performants.</p>
+        </div>
+
+        <div class="service-item top-right">
+            <i class="bx bx-mobile-alt"></i>
+            <h3>Applications Mobiles</h3>
+            <p>iOS et Android, intuitives et rapides.</p>
+        </div>
+
+        <div class="service-item middle-left">
+            <i class="bx bx-paint"></i>
+            <h3>Design UI/UX</h3>
+            <p>Interfaces attrayantes et ergonomiques.</p>
+        </div>
+
+        <div class="service-item middle-right">
+            <i class="bx bx-support"></i>
+            <h3>Consulting IT</h3>
+            <p>Conseils pour votre digitalisation.</p>
+        </div>
+
+        <div class="service-item bottom-left">
+            <i class="bx bx-cloud-upload"></i>
+            <h3>DevOps & CI/CD</h3>
+            <p>Automatisation & intégration continue.</p>
+        </div>
+
+        <div class="service-item bottom-right">
+            <i class="bx bx-shield-quarter"></i>
+            <h3>Cybersécurité</h3>
+            <p>Protection avancée de vos systèmes.</p>
+        </div>
+    </div>
+</section>
+
     </div>
 
     
@@ -149,39 +169,43 @@ export default function Home() {
     
 {/* </div> */}
 
-
-      <div className="home-technologies-container">
-        <div className="home-technologies">
-          <h1 className="home-pack-h1">Nos Technologies</h1>
-         <Caro/>
-        </div>
-      </div>
+<Portfolio/>
       
 
         <PricingSection />
     
-     <div className="faq-container">
+    <div className="faq-container">
   <h2>FAQ</h2>
   <h1 className="faq-caption">Your IT Questions, Answered</h1>
-  <div className="faq-list">
-    {faqItems.map((item, index) => (
-      <div
-        key={index}
-        className={`faq-item ${openIndex === index ? "open" : ""}`}
-        onClick={() => toggleAccordion(index)}
-      >
-        <div className="faq-question">
-          {item.question}
-          <span className="faq-icon">{openIndex === index ? "▼" : "▶"}</span>
+
+  <div className="faqdroit">
+    {/* Liste FAQ */}
+    <div className="faq-list">
+      {faqItems.map((item, index) => (
+        <div
+          key={index}
+          className={`faq-item ${openIndex === index ? "open" : ""}`}
+          onClick={() => toggleAccordion(index)}
+        >
+          <div className="faq-question">
+            {item.question}
+            <span className="faq-icon">
+              {openIndex === index ? "▼" : "▶"}
+            </span>
+          </div>
+          {openIndex === index && (
+            <div className="faq-answer">{item.answer}</div>
+          )}
         </div>
-        {openIndex === index && (
-          <div className="faq-answer">{item.answer}</div>
-        )}
-      </div>
-    ))}
+      ))}
+    </div>
+    {/* Image */}
+    <div className="faq-image">
+      <img src="FF.png" alt="faq illustration" />
+    </div>
   </div>
-  
 </div>
+
 
     {/* <section className="contact-cta">
       <img src="cont3.webp" alt="ring" className="cta-ring" />
@@ -202,6 +226,12 @@ export default function Home() {
    <Carousel />
 </section>
 
+      <div className="home-technologies-container">
+        <div className="home-technologies">
+          <h1 className="home-pack-h1">Nos Technologies</h1>
+          <Caro/>
+        </div>
+      </div>
 </>
   );
 }

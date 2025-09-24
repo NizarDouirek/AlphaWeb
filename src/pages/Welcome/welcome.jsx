@@ -1,6 +1,7 @@
 import React from "react";
 import './welcome.css';
 import ParticlesBackground from "../../composant/ParticlesBackground/ParticlesBackground";
+import { Link } from "react-router-dom";
 export default function Welcome(){
     return(
     <>
@@ -22,8 +23,8 @@ export default function Welcome(){
               </div>
     
               <div className="btn-main2">
-                <button className="btn-quotes2">Nos services</button>
-                <button className="btn-started">Nous contacter</button>
+               <Link to='/Services'> <button className="btn-quotes2">Nos services </button></Link>
+                <Link to='/Contact'><button className="btn-started">Contactez Nous</button></Link>
               </div>
             </div>
           </div>

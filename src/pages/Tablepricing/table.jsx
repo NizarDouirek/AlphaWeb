@@ -78,6 +78,7 @@ const PricingTable = () => {
             ))}
             </tr>
           </thead>
+          <br /><br />
           
           <tbody>
             {[

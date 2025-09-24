@@ -185,7 +185,7 @@
 }
 
 .info-card:hover {
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 
@@ -203,7 +203,7 @@
 /* Mais la carte survolée reprend son opacité normale */
 .info-cards .info-card:hover {
   opacity: 1;
-  transform: translateY(-10px);
+  /* transform: translateY(-10px); */
   box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
 

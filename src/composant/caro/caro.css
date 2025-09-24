@@ -18,7 +18,7 @@
   max-width: 2000px; 
   margin: 0 auto;
   overflow: hidden;
-  background: linear-gradient(90deg, #4e2abe, #d93685);
+    background: linear-gradient(135deg, #0c2078 0%, #764ba2 100%);
   padding: 25px 0;
   border-radius: 30px; /* arrondi pill */
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);

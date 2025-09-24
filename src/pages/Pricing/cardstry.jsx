@@ -71,11 +71,12 @@ const PricingSection = () => {
               </li>
             ))}
           </ul>
-          
+            <Link className="linkChoose" to='/table'>
           <button className="choose-btn">
-            <Link to='/table'>
-            <span className="circle-plus">+</span> Choose Plan</Link>
+          
+            <span className="circle-plus">+</span> Choose Plan
           </button>
+          </Link>
         </div>
       ))}
     </div></div>

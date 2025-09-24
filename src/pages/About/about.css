@@ -313,7 +313,9 @@
 
 .stat-item {
   /* background: rgba(255, 255, 255, 0.095); */
-   background: linear-gradient(135deg, #7a5cff, #ff6ec4);
+   /* background: linear-gradient(135deg, #7a5cff, #ff6ec4); */
+   
+    background: linear-gradient(135deg, #0c2078 0%, #764ba2 100%);
   border-radius: 12px;
   padding: 15px 15px;
   border: 1px solid #d4d3d3;
